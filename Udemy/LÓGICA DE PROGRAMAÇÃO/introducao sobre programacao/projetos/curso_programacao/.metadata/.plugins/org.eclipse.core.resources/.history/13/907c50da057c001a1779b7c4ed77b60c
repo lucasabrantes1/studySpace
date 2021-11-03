@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int y = 32; //variavel tipo basico int numero inteiros
+		double x = 10.35784; //variavel tipo double numero com virgulas
+		double z = 10.3574; //variavel tipo double com a virgula limitada
+		
+		System.out.println(y);
+		System.out.println(x);
+		System.out.println("%2.f%n", z);
+		
+		
+		
+		
+		
+		System.out.println("Bom dia!");
+
+	}
+
+}
