@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    
+	<title>Funções</title>
+    
+    <script type="text/javascript">
+
+function calculeareaterreno(largura, comprimento, espessura, densidade){
+    
+    largura = parseFloat(largura);
+comprimento = parseFloat(comprimento);
+espessura = parseFloat(espessura);
+densidade = parseFloat(densidade);
+
+
+    var area = largura * comprimento * espessura * densidade;
+    return area;
+
+}
+var largura = prompt("Digite a largura da chapa em mm ");
+var comprimento = prompt("Digite a comprimento da chapa em mm");
+var espessura = prompt("Digite a  espessura em mm");
+var densidade = prompt("Digite a  densidade do aço 7.85");
+
+
+var areaTerreno = calculeareaterreno(largura, comprimento, espessura, densidade);
+document.write("A chapa possui " + areaTerreno + " Kilos "); 
+
+
+
+
+    </script>
+	
+
+</head>
+<body>
+
+</body>
+</html>
+
