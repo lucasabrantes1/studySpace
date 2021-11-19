@@ -32,7 +32,34 @@ function fazAlgo(n1, n2, funcao){
     return funcao(n1, n2)
 }
 
-console.log(fazAlgo(5, 5, somar))
-console.log(fazAlgo(8, 3, subtrair))
+// console.log(fazAlgo(5, 5, somar))
+// console.log(fazAlgo(8, 3, subtrair))
 
-//Explicação; quando se passa somente o nome da função, porque utilizamos o parentese para executala ou declarar.
+//Exemplo 3
+
+function outra(z){
+    return z;
+}
+
+const ret = outra(somar)
+// console.log(ret(8,2))
+
+
+//Funções podem ter ou não parametros e podem ou não retornar valores. A mais simples é aquela que não recebe parametro e não retorna nada
+
+
+// Exemplo
+function message(){
+//     console.log('Geek')
+// }
+// message()
+}
+
+
+//É possivel utilziar funcoes com qualquer tipo de dado
+
+let valores = [1, 3.4, true, somar]
+
+for (let i = 0; i < valores.length; i++ ){
+    console.log(typeof(valores[i]))
+}
