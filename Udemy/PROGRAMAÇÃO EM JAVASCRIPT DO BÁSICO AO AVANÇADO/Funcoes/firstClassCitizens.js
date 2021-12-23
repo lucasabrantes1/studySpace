@@ -1,5 +1,5 @@
 /*Funções: Uma função nada mais é do que um elemento da programação que realiza alguma ação*/
-/*Functio e o nome da função, dentro de parenteses podemos ou não declarar argumentos de entrada para executar essa função, no caso num1 e num2, abro chaves e fecho chaves. 
+/*Function é o nome da função, dentro de parenteses podemos ou não declarar argumentos de entrada para executar essa função, no caso num1 e num2, abro chaves e fecho chaves. 
 e dentro da chaves está o que que a função executa. Ou seja retornara a soma do número 1 e n2 que são os parametros passados entre parenteses. A sua ação é retornar o n1 + n2
 e retornara o valor e ambos. Para executar a função basta colocar o nome  da function com () passando os argumentos
 */
