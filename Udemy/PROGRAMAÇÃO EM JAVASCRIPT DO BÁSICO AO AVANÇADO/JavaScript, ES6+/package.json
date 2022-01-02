@@ -1,0 +1,17 @@
+{
+  "name": "conhecendoEUtilizandoOBabel",
+  "version": "1.0.0",
+  "description": "Conhecendo e utilizando o Babel",
+  "main": "index.js",
+  "author": "Lucas",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel-loader": "^8.2.3"
+  },
+  "scripts": {
+    "dev":"babel ./main.js -o ./bundle.js -w"
+  }
+}
