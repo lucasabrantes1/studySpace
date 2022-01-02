@@ -1,0 +1,4 @@
+webpack nada mais é do que um servidor de desenvolviment oque nos permite utilizar recursos como hot reload, modularização dos scripts e muito mais
+
+
+O webpack junta todos os arquivos js e coloca tudo no bundle, assim como o babel
