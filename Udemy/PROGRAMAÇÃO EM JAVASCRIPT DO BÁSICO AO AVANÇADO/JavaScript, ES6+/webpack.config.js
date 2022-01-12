@@ -1,8 +1,11 @@
 module.exports = {
-    entry: './main.js',
+    entry: './src/main.js',
     output: {
-        path: __dirname,
-        filename: 'bundle.js',
+        path: __dirname + '/public',
+        filename: 'bundle.js', //criado em memoria
+    },
+    devServer: {
+        contentBase: __dirname + '/public',
     },
     module: {
         rules: [
