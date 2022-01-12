@@ -1,0 +1,2 @@
+"devDependencies": { //não seria instalada em produção
+"dependencies": { // a unica que seria instalada em produção
