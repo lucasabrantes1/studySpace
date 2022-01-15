@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Repositórios Github</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-    <body>
-        <div class="container">
-            <div class="card-header">
-                <h3 class="card-title">Repositórios Github</h3>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-header">
+        <h3 class="card-title">Repositórios Github</h3>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <form autocomplete="off">
+            <div class="form-group">
+              <label for="repositorio">Repositório</label>
+              <input
+                type="text"
+                class="form-control"
+                id="repositorio"
+                placeholder="Repositório do Github"
+                autofocus
+                required
+              />
+              <small id="repositorioHelp" class="form-text text-muted"
+                >Informe o repositório para adicionar à lista.</small
+              >
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <form autocomplete="off">
-                        <div class="form-group">
-                            <label for="repositorio">Repositório</label>
-                            <input type="text" class="form-control" id="repositorio" placeholder="Repositório do Github" autofocus required>
-                            <small id="repositorioHelp" class="form-text text-muted">Informe o repositório para adicionar à lista.</small>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Adicionar</button>
-                    </form>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-action">
-                        <img src="http://avatars0.githubusercontent.com/u/8083459?v=4" >
-                        <strong>Nerd Fonts</strong>
-                        <p>Iconic font aggregator, collection, and patcher</p>
-                        <a target="_blank" href="https://github.com/ryanoasis/nerd-fonts">Acessar</a>
-                    </li>
-                </ul>
-            </div>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+          </form>
         </div>
-        <script src="bundle.js"></script>
-    </body>
+        <ul class="list-group"></ul>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
 </html>
