@@ -4,7 +4,7 @@ class App{
     //Constructor
     constructor(){
         //Lista de repositorio
-        this.repositories = []
+        this.repositorios = []
 
         // Form
         this.formulario = document.querySelector('form')
