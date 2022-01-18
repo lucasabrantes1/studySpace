@@ -1,7 +1,7 @@
 "use strict";
 /*O js é uma linguagem de tipos dinamicos, onde vocÊ cria uma variavel pode-se obter o tipo que se quiser.*/
 //String
-let nome = 'João';
+let nome = 'Lucas';
 console.log(nome);
 // nome = 28 --> não é possível inferir valor pois ambos são de diferentes tipos.
 //numbers
@@ -51,3 +51,20 @@ let carro = 'BMW';
 console.log(carro);
 carro = { marca: 'BMW', ano: 2019 };
 console.log(carro);
+//Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//Tipando funções com parametros que devem retornar um tipo determinado..
+function retornaMeuNome() {
+    return nome;
+}
+console.log(retornaMeuNome());
+//Tipando funções que devem retornar um valor vazio ou que não retornam nada.
+function digaOi() {
+    console.log('Oi');
+    // return minhaIdade // --> Conflito no tipo.
+}
+//Tipando funções com parametros.
+function multiplicar(numA, numB) {
+    return numA * numB;
+}
+console.log(multiplicar(2, 2));
+//Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

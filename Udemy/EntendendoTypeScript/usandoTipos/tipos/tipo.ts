@@ -3,7 +3,7 @@
 
 
 //String
-let nome: string = 'João'
+let nome: string = 'Lucas'
 console.log(nome)
 // nome = 28 --> não é possível inferir valor pois ambos são de diferentes tipos.
 
@@ -70,9 +70,34 @@ console.log(Cor.Verde, Cor.Vermelho,('Dois valores com 100 não geram conflitos'
 
 
 //Any --> torna as variaveis como é no JS via de regra é bom evitar, é util para migrar pra de js para ts
-
 let carro: any = 'BMW'
 console.log(carro)
-
 carro = {marca: 'BMW', ano: 2019}
 console.log(carro)
+
+
+
+//Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+//Tipando funções com parametros que devem retornar um tipo determinado..
+function retornaMeuNome(): string{
+    return nome
+}
+
+console.log(retornaMeuNome())
+
+//Tipando funções que devem retornar um valor vazio ou que não retornam nada.
+function digaOi(): void{  //--> tipo void não retorna nada.
+    console.log('Oi')
+    // return minhaIdade // --> Conflito no tipo.
+}
+
+//Tipando funções com parametros.
+function multiplicar(numA: number, numB: number): number{
+    return numA * numB
+}
+
+console.log(multiplicar(2, 2))
+
+
+//Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
