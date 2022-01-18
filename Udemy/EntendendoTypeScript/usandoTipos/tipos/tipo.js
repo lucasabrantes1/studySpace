@@ -31,3 +31,18 @@ console.log(hobbies);
 let endereco = ["Av principal", 99, "a"];
 console.log(endereco);
 endereco = ["Rua importante", 1260, "a"];
+console.log(endereco);
+//Enums --> são enúmerações como no java, onde se define valores pré-definidos, como seg,ter,quar,quin,sex,sab e dom
+var Cor;
+(function (Cor) {
+    Cor[Cor["Cinza"] = 0] = "Cinza";
+    Cor[Cor["Verde"] = 100] = "Verde";
+    Cor[Cor["Azul"] = 2] = "Azul";
+    Cor[Cor["Laranja"] = 3] = "Laranja";
+    Cor[Cor["Amarelo"] = 4] = "Amarelo";
+    Cor[Cor["Vermelho"] = 100] = "Vermelho";
+})(Cor || (Cor = {}));
+let minhaCor = Cor.Verde;
+console.log(minhaCor);
+console.log(Cor.Azul);
+console.log(Cor.Verde, Cor.Vermelho, ('Dois valores com 100 não geram conflitos'));
