@@ -26,7 +26,14 @@ let minhaIdade: number //tipo dinâmico
 minhaIdade = 27
 console.log(typeof minhaIdade)
 minhaIdade =  27
-
-
 //Se não for definido uma variavel, nem o tipo, e nem inicializa a variavel significa que automaticamente a variavel
 //será tratada como tipo any.
+
+
+
+//Tipo array
+let hobbies: any[] = ["Cozinhar","Praticar esportes"]
+console.log(hobbies[0])
+console.log(typeof hobbies)
+hobbies = [100]
+console.log(hobbies)
