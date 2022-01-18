@@ -66,3 +66,13 @@ let minhaCor: Cor = Cor.Verde
 console.log(minhaCor)
 console.log(Cor.Azul)
 console.log(Cor.Verde, Cor.Vermelho,('Dois valores com 100 não geram conflitos'))
+
+
+
+//Any --> torna as variaveis como é no JS via de regra é bom evitar, é util para migrar pra de js para ts
+
+let carro: any = 'BMW'
+console.log(carro)
+
+carro = {marca: 'BMW', ano: 2019}
+console.log(carro)
