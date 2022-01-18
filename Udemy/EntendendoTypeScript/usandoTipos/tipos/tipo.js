@@ -27,3 +27,7 @@ console.log(hobbies[0]);
 console.log(typeof hobbies);
 hobbies = [100];
 console.log(hobbies);
+//Tupla = array de tipos de uma quantidade pre-definida de tipos pro exemplo um array de 3 posições sendo 1string, 2number, 3number
+let endereco = ["Av principal", 99, "a"];
+console.log(endereco);
+endereco = ["Rua importante", 1260, "a"];
