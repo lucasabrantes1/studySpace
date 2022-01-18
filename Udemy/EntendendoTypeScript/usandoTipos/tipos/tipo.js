@@ -13,3 +13,11 @@ console.log(idade);
 let possuiHobbies = false;
 // possuiHobbies = 1 --> não é possível inferir valor pois ambos são de diferentes tipos.
 console.log(possuiHobbies);
+//tipos explícitos
+//let minhaIdade --> tipo dinâmico
+let minhaIdade; //tipo dinâmico
+minhaIdade = 27;
+console.log(typeof minhaIdade);
+minhaIdade = 27;
+//Se não for definido uma variavel, nem o tipo, e nem inicializa a variavel significa que automaticamente a variavel
+//será tratada como tipo any.
