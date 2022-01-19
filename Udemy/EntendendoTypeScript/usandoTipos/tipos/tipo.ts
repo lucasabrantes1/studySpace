@@ -140,7 +140,7 @@ console.log(usuario)
 // }
 
 usuario = {
-    nome: 'Maria',
+    nome: 'Mari',
     idade: 31
 }
 
