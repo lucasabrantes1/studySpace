@@ -51,7 +51,7 @@ let carro = 'BMW';
 console.log(carro);
 carro = { marca: 'BMW', ano: 2019 };
 console.log(carro);
-//Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//?Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //Tipando funções com parametros que devem retornar um tipo determinado..
 function retornaMeuNome() {
     return nome;
@@ -67,4 +67,4 @@ function multiplicar(numA, numB) {
     return numA * numB;
 }
 console.log(multiplicar(2, 2));
-//Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//?Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

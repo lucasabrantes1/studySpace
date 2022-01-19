@@ -77,20 +77,23 @@ console.log(carro)
 
 
 
-//Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//?Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 //Tipando funções com parametros que devem retornar um tipo determinado..
 function retornaMeuNome(): string{
     return nome
 }
-
 console.log(retornaMeuNome())
+
+
 
 //Tipando funções que devem retornar um valor vazio ou que não retornam nada.
 function digaOi(): void{  //--> tipo void não retorna nada.
     console.log('Oi')
     // return minhaIdade // --> Conflito no tipo.
 }
+
+
 
 //Tipando funções com parametros.
 function multiplicar(numA: number, numB: number): number{
@@ -99,5 +102,6 @@ function multiplicar(numA: number, numB: number): number{
 
 console.log(multiplicar(2, 2))
 
+//?Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-//Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
