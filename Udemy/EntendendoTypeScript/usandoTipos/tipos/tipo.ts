@@ -102,12 +102,12 @@ function multiplicar(numA: number, numB: number): number{
 
 console.log(multiplicar(2, 2))
 
-//?Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//?Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 
 
 
-//!!Usando Tipos em Funções (Parâmetros e Retorno) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Usando Tipos em Funções (Parâmetros e Retorno) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 //Tipo Função
 let calculo: (oNomeDaVariavelNaoImportam: number,bastaOTipoBaterEORetornoTambem: number) => number
@@ -117,16 +117,34 @@ let calculo: (oNomeDaVariavelNaoImportam: number,bastaOTipoBaterEORetornoTambem:
 calculo = multiplicar
 console.log(calculo(5,5))
 
+//!! Usando Tipos em Funções (Parâmetros e Retorno) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 
 
 
+//?Objetos e Tipos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//objetos
+
+let usuario: { nome: string, idade: number } = {
+    nome: 'Lucas',
+    idade: 27
+}
+
+console.log(usuario)
+
+// usuario = {}
+
+// usuario = {
+//     name: 'Maria',
+//     age: 31
+// }
+
+usuario = {
+    nome: 'Maria',
+    idade: 31
+}
+
+console.log(usuario)
 
 
-
-
-
-
-
-
-//!! Usando Tipos em Funções (Parâmetros e Retorno) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//?Objetos e Tipos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
