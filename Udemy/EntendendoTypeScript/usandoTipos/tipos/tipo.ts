@@ -105,3 +105,28 @@ console.log(multiplicar(2, 2))
 //?Funções --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 
+
+
+//!!Usando Tipos em Funções (Parâmetros e Retorno) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+//Tipo Função
+let calculo: (oNomeDaVariavelNaoImportam: number,bastaOTipoBaterEORetornoTambem: number) => number
+// calculo = digaOi
+// calculo()
+
+calculo = multiplicar
+console.log(calculo(5,5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+//!! Usando Tipos em Funções (Parâmetros e Retorno) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
