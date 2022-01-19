@@ -93,4 +93,28 @@ usuario = {
     idade: 31
 };
 console.log(usuario);
-//?Objetos e Tipos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+let funcionario = {
+    supervisores: ['Ana', 'Fernando'],
+    baterPonto(horario) {
+        if (horario <= 8) {
+            return 'Ponto normal';
+        }
+        else {
+            return 'Fora do horário!';
+        }
+    }
+};
+let funcionario2 = {
+    supervisores: ['Hugo', 'Thiago'],
+    baterPonto(horario) {
+        if (horario <= 8) {
+            return 'Ponto normal';
+        }
+        else {
+            return 'Fora do horário!';
+        }
+    }
+};
+console.log(funcionario.supervisores);
+console.log(funcionario.baterPonto(8));
+//!!Definindo Tipos Personalizados (Alias) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

@@ -148,3 +148,45 @@ console.log(usuario)
 
 
 //?Objetos e Tipos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//!!Definindo Tipos Personalizados (Alias) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//Alias
+type Funcionario = {
+
+    supervisores: string[],
+    baterPonto: (horas: number) => string
+}
+
+let funcionario: Funcionario = {
+
+    supervisores: ['Ana','Fernando'],
+
+    baterPonto(horario: number): string {
+        if(horario <= 8){
+            return 'Ponto normal'
+        }else{
+            return 'Fora do horário!'
+        }
+    }
+}
+
+let funcionario2: Funcionario = {
+
+    supervisores: ['Hugo','Thiago'],
+    
+    baterPonto(horario: number): string {
+        if(horario <= 8){
+            return 'Ponto normal'
+        }else{
+            return 'Fora do horário!'
+        }
+    }
+}
+
+
+console.log(funcionario.supervisores)
+console.log(funcionario.baterPonto(8))
+
+
+//!!Definindo Tipos Personalizados (Alias) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

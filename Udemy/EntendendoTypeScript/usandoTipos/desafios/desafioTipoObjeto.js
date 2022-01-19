@@ -48,18 +48,20 @@ Criar um objeto funcionário com :
 // console.log(funcionario.baterPonto(2))
 // console.log(funcionario.baterPonto(hour))
 //- pegando horario atual
-let funcionario = {
-    supervisores: ['Ana', 'Fernando'],
-    baterPonto() {
-        let dateTime = new Date();
-        let hour = dateTime.getHours();
-        if (hour <= 8) {
-            return 'Ponto normal';
-        }
-        else {
-            return 'Fora do horário!';
-        }
-    }
-};
-console.log(funcionario.supervisores);
-console.log(funcionario.baterPonto());
+// let funcionario: {
+//     supervisores: string[],
+//     baterPonto: () => string
+// } = {
+//     supervisores: ['Ana','Fernando'],
+//     baterPonto(): string {
+//         let dateTime = new Date()
+//         let hour: any = dateTime.getHours()
+//         if(hour <= 8){
+//             return 'Ponto normal'
+//         }else{
+//             return 'Fora do horário!'
+//         }
+//     }
+// }
+// console.log(funcionario.supervisores)
+// console.log(funcionario.baterPonto())
