@@ -118,3 +118,12 @@ let funcionario2 = {
 console.log(funcionario.supervisores);
 console.log(funcionario.baterPonto(8));
 //!!Definindo Tipos Personalizados (Alias) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Tipos com Union Types --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+// Union Types
+//Aqui vamos supor que vc pode aceitar essa variavel nota como number e tb como string e nesse caso
+// que e interessante usar os union types.
+let nota = 10;
+console.log(`Minha nota é ${nota}!`);
+nota = '10';
+console.log(`Minha nota é ${nota}!`);
+//??Tipos com Union Types --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
