@@ -1,2 +1,3 @@
-var a = 'Teste TgdffdgS!';
-console.log(a);
+"use strict";
+// const a: string = 'Teste uiuiu me de papai!'
+// console.log(a)
