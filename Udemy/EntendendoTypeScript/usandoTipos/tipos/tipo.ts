@@ -205,6 +205,7 @@ console.log(funcionario.baterPonto(8))
 //??Tipos com Union Types --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 
+
 //!!Checando Tipos em Runtime --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //A checagem de tipos é feita de forma automatica pelo computador na hora da compilação, mas também é possível fazer
 //de forma manual.
@@ -223,3 +224,35 @@ if(typeof valor === "number"){
 
 //!!Checando Tipos em Runtime --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
+
+
+
+//??O tipo never --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*
+Suponhamos que tenhamos uma função e ela termina normalmente, como é o caso do void a cima
+
+No tipo never é quando queremos dizer explicitamente que a função nunca vai retornar, porque ela provavelmente
+vai ficar em looping, ou quando a função temrina com erro.
+*/
+
+function falha(msg: string): never{
+    throw new Error(msg)
+
+}
+
+const produto = {
+  nome: 'Sabão',
+  preco: -1,
+  validarProduto(){
+    if(!this.nome || this.nome.trim().length == 0){
+        falha('Precisa ter um nome.')
+    }
+    if(this.preco <= 0){
+        falha('Preco inválido!')    
+    }
+  }
+}
+
+produto.validarProduto()
+
+//??O tipo never --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

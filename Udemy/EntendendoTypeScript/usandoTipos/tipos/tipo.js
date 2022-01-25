@@ -139,3 +139,27 @@ else {
     console.log(typeof valor);
 }
 //!!Checando Tipos em Runtime --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??O tipo never --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*
+Suponhamos que tenhamos uma função e ela termina normalmente, como é o caso do void a cima
+
+No tipo never é quando queremos dizer explicitamente que a função nunca vai retornar, porque ela provavelmente
+vai ficar em looping, ou quando a função temrina com erro.
+*/
+function falha(msg) {
+    throw new Error(msg);
+}
+const produto = {
+    nome: 'Sabão',
+    preco: -1,
+    validarProduto() {
+        if (!this.nome || this.nome.trim().length == 0) {
+            falha('Precisa ter um nome.');
+        }
+        if (this.preco <= 0) {
+            falha('Preco inválido!');
+        }
+    }
+};
+produto.validarProduto();
+//??O tipo never --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
