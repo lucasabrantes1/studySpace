@@ -127,3 +127,15 @@ console.log(`Minha nota é ${nota}!`);
 nota = '10';
 console.log(`Minha nota é ${nota}!`);
 //??Tipos com Union Types --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Checando Tipos em Runtime --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//A checagem de tipos é feita de forma automatica pelo computador na hora da compilação, mas também é possível fazer
+//de forma manual.
+//Checando tipos de forma manual
+let valor = 30;
+if (typeof valor === "number") {
+    console.log("É um number!");
+}
+else {
+    console.log(typeof valor);
+}
+//!!Checando Tipos em Runtime --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
