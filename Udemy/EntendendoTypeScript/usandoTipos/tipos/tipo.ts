@@ -242,7 +242,7 @@ function falha(msg: string): never{
 
 const produto = {
   nome: 'Sabão',
-  preco: -1,
+  preco: 4, //-1 lnaça o erro
   validarProduto(){
     if(!this.nome || this.nome.trim().length == 0){
         falha('Precisa ter um nome.')
@@ -256,3 +256,50 @@ const produto = {
 produto.validarProduto()
 
 //??O tipo never --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+//!!Valores Opcionais com Tipo "Null" --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*Dado uma mudança no TSconfig, o strictNullChecks permite que seja impossível retornar um valor nulo
+Para isso pode-se usar o union type conforme a baixo.
+
+
+o nullo tambbem e considerado um tipo mas usado sozinho não é muito util.
+
+*/
+
+
+let altura = 12
+// altura = null
+
+
+let alturaOpcional: null | number = 12
+alturaOpcional = null
+
+
+type Contato = {
+    nome: string,
+    tel1: string,
+    tel2: string | null
+}
+
+const contato1: Contato = {
+    nome: 'Fulano',
+    tel1: '98765432',
+    tel2: null
+}
+
+console.log(contato1.nome);
+console.log(contato1.tel1);
+console.log(contato1.tel2);
+
+
+let podeSerNulo = null // é considerado any
+// let podeSerNulo:  null = null // não é muito util sozinho o tipo null
+// podeSerNulo = 12
+console.log(podeSerNulo)
+// podeSerNulo = 'abc'
+console.log(podeSerNulo)
+
+//!!Valores Opcionais com Tipo "Null" --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
