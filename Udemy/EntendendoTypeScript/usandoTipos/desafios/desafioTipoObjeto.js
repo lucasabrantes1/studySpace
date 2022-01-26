@@ -88,3 +88,4 @@ Criar um objeto funcionário com :
 // console.log(funcionario.supervisores)
 // console.log(funcionario.baterPonto(2))
 // console.log(funcionario.baterPonto(hour))
+//# sourceMappingURL=desafioTipoObjeto.js.map

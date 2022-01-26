@@ -16,3 +16,4 @@ let correntista = {
 // correntista.contaBancaria.depositar(3000)
 correntista.contaBancaria.sacar(3000);
 console.log(correntista);
+//# sourceMappingURL=desafioJsToTs.js.map

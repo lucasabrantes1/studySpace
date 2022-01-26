@@ -190,3 +190,4 @@ console.log(podeSerNulo);
 // podeSerNulo = 'abc'
 console.log(podeSerNulo);
 //!!Valores Opcionais com Tipo "Null" --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//# sourceMappingURL=tipo.js.map

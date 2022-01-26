@@ -23,3 +23,10 @@ console.log(`Canal = ${canal}`);
 "target": "es6",
 */
 //??Alterando o Target (Versão do JavaScript) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Debugando com Source Maps --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/* A propriedade "sourceMap": true, passa a gerar um arquivo .map
+O intuito do sourcemap é quando habilitar o console de desenvolvedor do browser ele com ese arquivo .map gerado
+será possivel ver o código original JS que está sendo utilizado para ver lá.
+*/
+//!!Debugando com Source Maps --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//# sourceMappingURL=entendendoOCompiladorTypescript.js.map
