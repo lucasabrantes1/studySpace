@@ -8,7 +8,7 @@ let inscritos = 653185;
 // canal = inscritos //--> em js funciona mas em ts gera um proble se salvarmos o arquivo ele vai gerar em js
 console.log(`Canal = ${canal}`);
 // let nome = 'Pedro' --> erro de scopo
-console.log(`Nome = ${nome}`);
+// console.log(`Nome = ${nome}`);
 /*Para resolvermos isso devemos adicionar a seguinte propriedade dentro de compilerOptions
  no arquivo tsconfig.json
  
@@ -18,3 +18,8 @@ console.log(`Nome = ${nome}`);
  ou seja ele não ira emitir quando houver um erro, ou seja oarquivo js compilado apartir do ts.
  */
 //!!Compilação e "noEmitOnError" --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Alterando o Target (Versão do JavaScript) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*A porpiedade target, diz qual será a versão do JS que sera usado no arquivo compilado
+"target": "es6",
+*/
+//??Alterando o Target (Versão do JavaScript) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

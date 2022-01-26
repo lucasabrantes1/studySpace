@@ -10,7 +10,7 @@ console.log(`Canal = ${canal}`)
 
 
 // let nome = 'Pedro' --> erro de scopo
-console.log(`Nome = ${nome}`);
+// console.log(`Nome = ${nome}`);
 
 
 
@@ -25,4 +25,10 @@ console.log(`Nome = ${nome}`);
 
 //!!Compilação e "noEmitOnError" --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
+//??Alterando o Target (Versão do JavaScript) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*A porpiedade target, diz qual será a versão do JS que sera usado no arquivo compilado
+"target": "es6",  
+*/
 
+
+//??Alterando o Target (Versão do JavaScript) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
