@@ -29,4 +29,16 @@ O intuito do sourcemap é quando habilitar o console de desenvolvedor do browser
 será possivel ver o código original JS que está sendo utilizado para ver lá.
 */
 //!!Debugando com Source Maps --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Evitando "Any" Implícito --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*
+Serve para dizer que não haja erro, quando uma variavel for implicitamente ao any, por padrão isso é null mas para alterar
+isso basta alterar a flag  // "noImplicitAny": true,
+*/
+function soma(a, b) {
+    return a + b;
+}
+let qualquerCoisa;
+qualquerCoisa = 12;
+qualquerCoisa = 'abc';
+//??Evitando "Any" Implícito --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=entendendoOCompiladorTypescript.js.map
