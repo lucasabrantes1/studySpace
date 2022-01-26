@@ -41,4 +41,20 @@ let qualquerCoisa;
 qualquerCoisa = 12;
 qualquerCoisa = 'abc';
 //??Evitando "Any" Implícito --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!"strictNullChecks", "noUnusedParameters" e "noUnusedLocals" --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*strictNullChecks --> Checa os nulos, isso pode gerar um problema
+noUnusedParameters --> parametros não utilizadas retorna erro
+noUnusedLocals --> para variaveis não utilizadas retorna erro
+*/
+function saudar(isManha) {
+    let saudacao;
+    if (isManha) {
+        saudacao = 'Bom dia';
+    }
+    else {
+        saudacao = 'Fique bem!';
+    }
+    return saudacao;
+}
+//!!"strictNullChecks", "noUnusedParameters" e "noUnusedLocals" --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=entendendoOCompiladorTypescript.js.map
