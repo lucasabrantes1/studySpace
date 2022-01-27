@@ -88,3 +88,18 @@ function saudar(isManha: boolean){
 
 
 //??Diretório de Saída --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//!!Arquivo de Saída --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*Nessa opção seleciona um unico arquivo, de saída, ao invez de compilar todos os arquivos cada um separado na opçãoo
+"outFile": "./",
+
+essa opção é inconpativel com o commonjs, tendo assym que mudar o module para system
+
+
+"module": "system",
+"outFile": "./build/app.js",
+*/
+
+
+//!!Arquivo de Saída --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
