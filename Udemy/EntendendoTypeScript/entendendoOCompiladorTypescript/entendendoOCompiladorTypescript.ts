@@ -74,3 +74,17 @@ function saudar(isManha: boolean){
 
 
 //!!"strictNullChecks", "noUnusedParameters" e "noUnusedLocals" --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+
+//??Diretório de Saída --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*Outra opção quando se vai ajustar ou copilar os arquivos é a pasta de saida na qual sera gerada os arquivos .js  essa geração é feita  apartir da propriedade no ts.config chamada
+
+"outDir": "./",
+
+"outDir": "./build", --> a copilação ira cair apartir da pasta build
+*/
+
+
+//??Diretório de Saída --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
