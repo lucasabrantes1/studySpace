@@ -89,4 +89,11 @@ function contagemRegressiva(inicio = 5, fim = 3 - 5) {
 contagemRegressiva();
 contagemRegressiva(3);
 //??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Operador Spread... & Rest #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+const numbers = [1, 10, 99, -5];
+console.log(Math.max(...numbers));
+const turmaA = ['Joao', 'Maria', 'Lucas'];
+const turmaB = ['Larissa', 'Lexturos', 'Luthero', ...turmaA.slice(1)];
+console.log(turmaB);
+//!!Operador Spread & Rest #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map

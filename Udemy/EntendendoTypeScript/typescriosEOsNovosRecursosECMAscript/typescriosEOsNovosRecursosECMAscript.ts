@@ -131,3 +131,17 @@ console.log(somar(2,2))
    contagemRegressiva()
    contagemRegressiva(3)
 //??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//!!Operador Spread... & Rest #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+const numbers = [1, 10, 99, -5]
+console.log(Math.max(...numbers))
+
+
+
+const turmaA: string[] = ['Joao','Maria','Lucas']
+const turmaB: string[] = ['Larissa','Lexturos','Luthero',...turmaA.slice(1)]
+console.log(turmaB)
+
+
+//!!Operador Spread & Rest #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
