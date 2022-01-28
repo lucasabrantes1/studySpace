@@ -29,4 +29,31 @@ for (let i = 0; i < 0; i++) {
 }
 // console.log(i) //n na pra acessar.
 //!!Let e Const #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Arrow Function #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*this = referencia de um objeto(contexto atual)*/
+//Maneira tradicional de declarar uma função
+const somar = function (n1, n2) {
+    return n1 + n2;
+};
+console.log(somar(2, 2));
+//Função anonima
+// function(n1: number, n2:number): number{
+//    return n1 + n2
+// }
+// console.log(somar(2,2))
+//Função com nome 
+function somarr(n1, n2) {
+    return n1 + n2;
+}
+console.log(somarr(2, 2));
+//Função arrow sem chaves  é sempre anonima e não precisa de return
+// => indica retorno
+const subtrair = (n1, n2) => n1 - n2;
+console.log(subtrair(2, 3));
+//Função arrow com chaves precisa do return
+const subtrairVersao2 = (n1, n2) => {
+    return n1 - n2;
+};
+console.log(subtrairVersao2(2, 3));
+//??Arrow Function #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map
