@@ -56,4 +56,25 @@ const subtrairVersao2 = (n1, n2) => {
 };
 console.log(subtrairVersao2(2, 3));
 //??Arrow Function #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Arrow Function #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//Funcao arrow sem parametro
+// const saudacao = () => console.log("Olá")
+// saudacao()
+// const falarCom = (pessoa: string) => console.log('Oi ' + pessoa)
+// falarCom('Lucas')
+// //This pode variar 
+// //Bind significa que o que eu passar como parametro para ele sera usado dentro da fun;'ao como o this
+// function normalComThis(){
+//    console.log(this)
+// }
+// const normalComThisEspecial = normalComThis.bind({nome: 'Ana'})
+// normalComThis()
+// normalComThisEspecial()
+// //Arow function com this
+// //this????
+// console.log(this)
+// //PAra saber quem sera o this dentro da função arrow, basta ver quem é o this na linha anterior em que a função definida.
+// const arrowComThis = () => console.log(this)
+// arrowComThis()
+//!!Arrow Function #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map
