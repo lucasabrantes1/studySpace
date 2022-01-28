@@ -95,25 +95,39 @@ console.log(somar(2,2))
 // //Bind significa que o que eu passar como parametro para ele sera usado dentro da fun;'ao como o this
 
 // function normalComThis(){
-//    console.log(this)
-
-// }
-
-// const normalComThisEspecial = normalComThis.bind({nome: 'Ana'})
-
-// normalComThis()
-// normalComThisEspecial()
-
-
-
-// //Arow function com this
-// //this????
-// console.log(this)
-// //PAra saber quem sera o this dentro da função arrow, basta ver quem é o this na linha anterior em que a função definida.
-// const arrowComThis = () => console.log(this)
-// arrowComThis()
-
-
-
-
+   //    console.log(this)
+   
+   // }
+   
+   // const normalComThisEspecial = normalComThis.bind({nome: 'Ana'})
+   
+   // normalComThis()
+   // normalComThisEspecial()
+   
+   
+   
+   // //Arow function com this
+   // //this????
+   // console.log(this)
+   // //PAra saber quem sera o this dentro da função arrow, basta ver quem é o this na linha anterior em que a função definida.
+   // const arrowComThis = () => console.log(this)
+   // arrowComThis()
+   
+   
 //!!Arrow Function #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+   
+
+//??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+   function contagemRegressiva(inicio: number = 5, fim: number = 3 - 5): void{
+      console.log(inicio)
+      while( inicio >= 0) {
+         inicio--
+         console.log(inicio)
+      }
+      console.log("Fim")
+   }
+
+   contagemRegressiva()
+   contagemRegressiva(3)
+//??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

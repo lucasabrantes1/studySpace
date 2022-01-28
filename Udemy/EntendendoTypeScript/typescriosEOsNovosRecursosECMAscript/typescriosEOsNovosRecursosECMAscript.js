@@ -77,4 +77,16 @@ console.log(subtrairVersao2(2, 3));
 // const arrowComThis = () => console.log(this)
 // arrowComThis()
 //!!Arrow Function #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+function contagemRegressiva(inicio = 5, fim = 3 - 5) {
+    console.log(inicio);
+    while (inicio >= 0) {
+        inicio--;
+        console.log(inicio);
+    }
+    console.log("Fim");
+}
+contagemRegressiva();
+contagemRegressiva(3);
+//??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map
