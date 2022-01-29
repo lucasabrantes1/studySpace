@@ -105,4 +105,16 @@ const numeros = retornaArray(1, 2, 7, 8, 9, 10);
 console.log(numeros);
 // console.log(retornaArray(...numbers)) --> separa e junta
 //??Operador  Rest #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Operador Spread & Rest #03 no contexto de tupla--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+const tupla = [1, 'abc', false];
+function tuplaParam1(a, b, c) {
+    console.log(`1) ${a} ${b} ${c}`);
+}
+tuplaParam1(...tupla);
+function tuplaParam2(...params) {
+    console.log(Array.isArray(params));
+    console.log(`2) ${params[0]} ${params[1]} ${params[2]}`);
+}
+tuplaParam2(...tupla);
+//!!Operador Spread & Rest #03 no contexto de tupla --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map
