@@ -96,4 +96,13 @@ const turmaA = ['Joao', 'Maria', 'Lucas'];
 const turmaB = ['Larissa', 'Lexturos', 'Luthero', ...turmaA.slice(1)];
 console.log(turmaB);
 //!!Operador Spread & Rest #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Operador  Rest #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+function retornaArray(a, ...args) {
+    console.log(a);
+    return args;
+}
+const numeros = retornaArray(1, 2, 7, 8, 9, 10);
+console.log(numeros);
+// console.log(retornaArray(...numbers)) --> separa e junta
+//??Operador  Rest #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map
