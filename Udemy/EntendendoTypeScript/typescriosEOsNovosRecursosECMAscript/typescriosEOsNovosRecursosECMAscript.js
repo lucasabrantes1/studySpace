@@ -117,4 +117,15 @@ function tuplaParam2(...params) {
 }
 tuplaParam2(...tupla);
 //!!Operador Spread & Rest #03 no contexto de tupla --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Operador Destructuring (Array) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*Quer dizer pegar dados de uma estrutura e expor esses dados de uma forma mais simples
+e mais rapida sem ter que pegar cada um dos dados e atribuir para cada variavel.*/
+const caracteristica = ['Motor zetec 1.8', 2020];
+// const motor = caracteristica[0]
+// const anos = caracteristica[1]
+//Aplicando destructuring
+const [motor, ano] = caracteristica;
+console.log(motor);
+console.log(ano);
+//??Operador Destructuring (Array) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map
