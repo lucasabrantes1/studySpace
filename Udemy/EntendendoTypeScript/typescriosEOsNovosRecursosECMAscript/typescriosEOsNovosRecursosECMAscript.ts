@@ -229,3 +229,22 @@ console.log(y)
 
 
 //!!Operador Destructuring (Objeto) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//??Template String --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//sem template string
+const usuarioId: string = 'suportecoder'
+const notificacoes: string = '19'
+// const boasVindas = ' Boas vindas ' + usuarioId + ' Notificações ' + notificacoes
+// console.log(boasVindas)
+
+
+//Com template string
+const boasVindas =`
+
+    Boas vindas ${usuarioId},
+    Notificações: ${parseInt(notificacoes) > 9 ? '+9' : notificacoes},  
+`
+console.log(boasVindas)
+
+//??Template String --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

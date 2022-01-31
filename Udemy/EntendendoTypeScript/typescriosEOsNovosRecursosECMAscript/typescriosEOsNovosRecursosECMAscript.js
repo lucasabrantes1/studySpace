@@ -145,4 +145,18 @@ console.log(n);
 console.log(p);
 console.log(y);
 //!!Operador Destructuring (Objeto) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Template String --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//sem template string
+const usuarioId = 'suportecoder';
+const notificacoes = '19';
+// const boasVindas = ' Boas vindas ' + usuarioId + ' Notificações ' + notificacoes
+// console.log(boasVindas)
+//Com template string
+const boasVindas = `
+
+    Boas vindas ${usuarioId},
+    Notificações: ${parseInt(notificacoes) > 9 ? '+9' : notificacoes},  
+`;
+console.log(boasVindas);
+//??Template String --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map
