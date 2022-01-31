@@ -127,5 +127,22 @@ const caracteristica = ['Motor zetec 1.8', 2020];
 const [motor, ano] = caracteristica;
 console.log(motor);
 console.log(ano);
+const [w, z] = [2, 3];
 //??Operador Destructuring (Array) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Operador Destructuring (Objeto) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/* */
+const item = {
+    nome: 'SSD 480GB',
+    preco: 200,
+    caracteristicas: {
+        y: 'Importado'
+    }
+};
+// const nomeItem = item.preco
+//destructiring
+const { nome: n, preco: p, caracteristicas: { y } } = item;
+console.log(n);
+console.log(p);
+console.log(y);
+//!!Operador Destructuring (Objeto) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=typescriosEOsNovosRecursosECMAscript.js.map
