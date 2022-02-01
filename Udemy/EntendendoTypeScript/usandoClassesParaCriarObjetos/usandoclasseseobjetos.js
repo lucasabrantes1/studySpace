@@ -38,17 +38,35 @@ Criar o construtor
 oBS1 - DESCONTO É OPCIONAL
 OBS2 - CRIAR DOIS PRODUTOS: PASSANDO DOIS E TRêS PARAMETROS
 */
+// class Produto {
+//     constructor(public nome:string, public preco: number,
+//         public desconto: number = 0) {
+//         }
+//     }
+//     const prod1 = new Produto('Caneta', 4.20)
+//     prod1.desconto = 0.06
+//     console.log(prod1)
+//     const prod2 = new Produto ('Caderno Escolar', 18.80, 0.15)
+//     console.log(prod2)    
+//!!Desafio  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Classes & Métodos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 class Produto {
     constructor(nome, preco, desconto = 0) {
         this.nome = nome;
         this.preco = preco;
         this.desconto = desconto;
     }
+    precoComDesconto() {
+        return this.preco * (1 - this.desconto);
+    }
+    /* metodo */ resumo() {
+        return `${this.nome} custa R$${this.precoComDesconto()} (${this.desconto * 100}% off)`;
+    }
 }
 const prod1 = new Produto('Caneta', 4.20);
 prod1.desconto = 0.06;
-console.log(prod1);
+console.log(prod1.resumo());
 const prod2 = new Produto('Caderno Escolar', 18.80, 0.15);
-console.log(prod2);
-//!!Desafio  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+console.log(prod2.resumo());
+//??Classes & Métodos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=usandoclasseseobjetos.js.map
