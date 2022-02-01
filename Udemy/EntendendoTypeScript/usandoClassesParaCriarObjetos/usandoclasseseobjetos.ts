@@ -100,23 +100,23 @@ class Produto {
             const prod2 = new Produto ('Caderno Escolar', 18.80, 0.15)
     console.log(prod2.resumo())  
     
-
-//??Classes & Métodos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+    //??Classes & Métodos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     
     
-//!!Modificadores de Acesso  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-
-            /*private, public e protected*/
-
-     class Carro {
-         private velocidadeAtual: number = 0
-
-         constructor(public marca:string, public modelo: string,
+    //!!Modificadores de Acesso  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+    /*private, public e protected*/
+    
+    class Carro {
+        private velocidadeAtual: number = 0
+        
+        constructor(public marca:string, public modelo: string,
             private velocidadeMaxima: number = 200){
-
+                
             }
-
-            private alterarVelocidade(delta: number): number{
+            
+            protected alterarVelocidade(delta: number): number{
                 const novaVelocidade = this.velocidadeAtual + delta
                 const velocidadeValida =  novaVelocidade >= 0 && novaVelocidade <= this.velocidadeMaxima
 
@@ -125,34 +125,56 @@ class Produto {
                 } else {
                     this.velocidadeAtual = delta > 0 ? this.velocidadeMaxima : 0
                 }
-
+                
                 return this.velocidadeAtual
             }
-
+            
             public acelerar(): number{
                 return this.alterarVelocidade(5)
             }
-
+            
             public frear() {
                 return this.alterarVelocidade(-5)
             }
-     }     
-     
-     const carro1 = new Carro('Ford', 'Ka', 185)
-     
-
-     Array(50).fill(0).forEach(() => carro1.acelerar())
-     console.log(carro1.acelerar())
-
-     
-     Array(25).fill(0).forEach(() => carro1.frear())
-     console.log(carro1.frear())
-
-
-     //Simular erros
-
-    //  carro1.velocidadeAtual = 300
-    //  console.log('Atual ->' + carro1.velocidadeAtual)
-
-    
+        }     
+        
+        const carro1 = new Carro('Ford', 'Ka', 185)
+        
+        
+        Array(50).fill(0).forEach(() => carro1.acelerar())
+        console.log(carro1.acelerar())
+        
+        
+        Array(25).fill(0).forEach(() => carro1.frear())
+        console.log(carro1.frear())
+        
+        
+        //Simular erros
+        
+        //  carro1.velocidadeAtual = 300
+        //  console.log('Atual ->' + carro1.velocidadeAtual)
+        
+        
 //!!Modificadores de Acesso  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//??Herança #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//é um hel to frase
+
+ class Ferrari extends Carro {
+    public acelerar(): number{
+        return this.alterarVelocidade(20)
+    }
+    
+    public frear() {
+        return this.alterarVelocidade(-15)
+    }
+
+ }
+
+    const f40 = new Ferrari('Ferrari', 'F40', 324)
+    console.log(`${f40.marca} ${f40.modelo}`)
+    console.log(f40.acelerar())
+    console.log(f40.frear())
+
+//??Herança #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
