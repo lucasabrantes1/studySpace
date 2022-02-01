@@ -161,12 +161,12 @@ class Produto {
 //??Herança #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //é um hel to frase
 
- class Ferrari extends Carro {
-
+class Ferrari extends Carro {
+    
     constructor(modelo: string, velocidadeMaxima: number){
         super('Ferrari',modelo, velocidadeMaxima)
     }
-
+    
     public acelerar(): number{
         return this.alterarVelocidade(20)
     }
@@ -174,12 +174,38 @@ class Produto {
     public frear() {
         return this.alterarVelocidade(-15)
     }
-
+    
  }
-
-    const f40 = new Ferrari('F40', 324)
+ 
+ const f40 = new Ferrari('F40', 324)
     console.log(`${f40.marca} ${f40.modelo}`)
     console.log(f40.acelerar())
     console.log(f40.frear())
+    
+    //??Herança #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+    
 
-//??Herança #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Getters & Setters  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+ //Getters $ Setters
+ class Pessoa {
+     private _idade: number = 0
+
+     get idade(): number{
+         return this._idade
+     }
+
+     set idade(valor: number){
+         if(valor >= 0 && valor <= 120){
+             this._idade = valor
+         }
+     }
+ }
+
+ const pessoa1 = new Pessoa
+ pessoa1.idade = 10
+ console.log(pessoa1.idade)
+
+//!!Getters & Setters  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
