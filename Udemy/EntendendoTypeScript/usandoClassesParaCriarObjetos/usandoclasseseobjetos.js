@@ -108,6 +108,9 @@ console.log(carro1.frear());
 //??Herança #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //é um hel to frase
 class Ferrari extends Carro {
+    constructor(modelo, velocidadeMaxima) {
+        super('Ferrari', modelo, velocidadeMaxima);
+    }
     acelerar() {
         return this.alterarVelocidade(20);
     }
@@ -115,7 +118,7 @@ class Ferrari extends Carro {
         return this.alterarVelocidade(-15);
     }
 }
-const f40 = new Ferrari('Ferrari', 'F40', 324);
+const f40 = new Ferrari('F40', 324);
 console.log(`${f40.marca} ${f40.modelo}`);
 console.log(f40.acelerar());
 console.log(f40.frear());
