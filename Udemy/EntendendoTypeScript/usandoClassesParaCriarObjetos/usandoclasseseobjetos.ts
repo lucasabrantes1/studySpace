@@ -182,30 +182,53 @@ class Ferrari extends Carro {
     console.log(f40.acelerar())
     console.log(f40.frear())
     
-    //??Herança #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-    
-    
+//??Herança #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
 
 //!!Getters & Setters  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+//Getters $ Setters
+class Pessoa {
+    private _idade: number = 0
     
- //Getters $ Setters
- class Pessoa {
-     private _idade: number = 0
+    get idade(): number{
+        return this._idade
+    }
+    
+    set idade(valor: number){
+        if(valor >= 0 && valor <= 120){
+            this._idade = valor
+        }
+    }
+}
 
-     get idade(): number{
-         return this._idade
-     }
-
-     set idade(valor: number){
-         if(valor >= 0 && valor <= 120){
-             this._idade = valor
-         }
-     }
- }
-
- const pessoa1 = new Pessoa
+const pessoa1 = new Pessoa
  pessoa1.idade = 10
  console.log(pessoa1.idade)
+ 
+ //!!Getters & Setters  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ 
+ //??Atributos e Membros Estáticos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ /*Estatico pertence a classe e n a instancia*/
 
-//!!Getters & Setters  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    class Matematica {
+        static PI: number = 3.1416
 
+        static areaCirc(raio: number): number{
+            return this.PI * raio * raio
+        }
+    }
+
+    
+// const m1 = new Matematica()
+// m1.PI = 4.2
+// console.log(m1.areaCirc(2))
+
+// const m2 = new Matematica()
+// console.log(m2.areaCirc(2))
+
+console.log(Matematica.areaCirc(4))
+
+
+ //??Atributos e Membros Estáticos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
