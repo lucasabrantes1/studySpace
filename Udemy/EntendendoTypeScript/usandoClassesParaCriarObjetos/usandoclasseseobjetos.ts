@@ -211,17 +211,17 @@ const pessoa1 = new Pessoa
  
  //??Atributos e Membros Estáticos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
  /*Estatico pertence a classe e n a instancia*/
-
-    class Matematica {
-        static PI: number = 3.1416
-
-        static areaCirc(raio: number): number{
-            return this.PI * raio * raio
+ 
+ class Matematica {
+     static PI: number = 3.1416
+     
+     static areaCirc(raio: number): number{
+         return this.PI * raio * raio
         }
     }
-
     
-// const m1 = new Matematica()
+    
+    // const m1 = new Matematica()
 // m1.PI = 4.2
 // console.log(m1.areaCirc(2))
 
@@ -231,4 +231,43 @@ const pessoa1 = new Pessoa
 console.log(Matematica.areaCirc(4))
 
 
- //??Atributos e Membros Estáticos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Atributos e Membros Estáticos --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+//!!Classe Abstrata  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+   abstract class Calculo {
+      protected resultado: number = 0
+
+      abstract executar(...numeros: number[]): void
+
+      getResultado(): number {
+          return this.resultado
+      }
+   }
+
+   class Soma extends Calculo {
+        executar(...numeros: number[]): void{
+            this.resultado = numeros.reduce((t, a) => t + a)
+        }
+    
+   }
+   class Multiplicacao extends Calculo {
+    executar(...numeros: number[]): void{
+       this.resultado = numeros.reduce((t, a) => t * a)
+    }
+}
+
+let c1 = new Soma()
+c1.executar(2,3,4,5)
+console.log(c1.getResultado())
+
+
+c1 = new Multiplicacao()
+c1.executar(2,3,4,5)
+console.log(c1.getResultado())
+
+
+
+//!!Classe Abstrata  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
