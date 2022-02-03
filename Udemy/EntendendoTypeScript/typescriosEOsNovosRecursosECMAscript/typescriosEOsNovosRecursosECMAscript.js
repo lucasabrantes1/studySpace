@@ -78,16 +78,16 @@ console.log(subtrairVersao2(2, 3));
 // arrowComThis()
 //!!Arrow Function #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-function contagemRegressiva(inicio = 5, fim = 3 - 5) {
-    console.log(inicio);
-    while (inicio >= 0) {
-        inicio--;
-        console.log(inicio);
-    }
-    console.log("Fim");
-}
-contagemRegressiva();
-contagemRegressiva(3);
+// function contagemRegressiva(inicio: number = 5, fim: number = 3 - 5): void{
+//    console.log(inicio)
+//    while( inicio >= 0) {
+//       inicio--
+//       console.log(inicio)
+//    }
+//    console.log("Fim")
+// }
+// contagemRegressiva()
+// contagemRegressiva(3)
 //??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //!!Operador Spread... & Rest #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 const numbers = [1, 10, 99, -5];

@@ -119,17 +119,17 @@ console.log(somar(2,2))
    
 
 //??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-   function contagemRegressiva(inicio: number = 5, fim: number = 3 - 5): void{
-      console.log(inicio)
-      while( inicio >= 0) {
-         inicio--
-         console.log(inicio)
-      }
-      console.log("Fim")
-   }
+   // function contagemRegressiva(inicio: number = 5, fim: number = 3 - 5): void{
+   //    console.log(inicio)
+   //    while( inicio >= 0) {
+   //       inicio--
+   //       console.log(inicio)
+   //    }
+   //    console.log("Fim")
+   // }
 
-   contagemRegressiva()
-   contagemRegressiva(3)
+   // contagemRegressiva()
+   // contagemRegressiva(3)
 //??Parâmetro Padrão --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 

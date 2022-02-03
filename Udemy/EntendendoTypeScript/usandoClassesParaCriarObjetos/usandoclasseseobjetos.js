@@ -176,11 +176,34 @@ class Multiplicacao extends Calculo {
         this.resultado = numeros.reduce((t, a) => t * a);
     }
 }
-let c1 = new Soma();
+let c1 = new Soma(); //polimorfismo
 c1.executar(2, 3, 4, 5);
 console.log(c1.getResultado());
 c1 = new Multiplicacao();
 c1.executar(2, 3, 4, 5);
 console.log(c1.getResultado());
 //!!Classe Abstrata  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Construtor Privado & Singleton --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+class Unico {
+    constructor() { }
+    static getInstance() {
+        return Unico.instance;
+    }
+    agora() {
+        return new Date;
+    }
+}
+Unico.instance = new Unico;
+console.log(Unico.getInstance().agora());
+//??Construtor Privado & Singleton --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Atributos Somente Leitura  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+class Aviao {
+    constructor(modelo, prefixo) {
+        this.prefixo = prefixo;
+        this.modelo = modelo;
+    }
+}
+const turboHelice = new Aviao('Tu-114', 'PT-ABC');
+console.log(turboHelice);
+//!!Atributos Somente Leitura  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=usandoclasseseobjetos.js.map

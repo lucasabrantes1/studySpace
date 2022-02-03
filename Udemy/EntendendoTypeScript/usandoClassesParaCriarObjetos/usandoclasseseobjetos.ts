@@ -237,29 +237,29 @@ console.log(Matematica.areaCirc(4))
 
 //!!Classe Abstrata  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-   abstract class Calculo {
-      protected resultado: number = 0
-
-      abstract executar(...numeros: number[]): void
-
-      getResultado(): number {
-          return this.resultado
-      }
-   }
-
-   class Soma extends Calculo {
-        executar(...numeros: number[]): void{
-            this.resultado = numeros.reduce((t, a) => t + a)
-        }
+abstract class Calculo {
+    protected resultado: number = 0
     
-   }
-   class Multiplicacao extends Calculo {
-    executar(...numeros: number[]): void{
-       this.resultado = numeros.reduce((t, a) => t * a)
+    abstract executar(...numeros: number[]): void
+    
+    getResultado(): number {
+        return this.resultado
     }
 }
 
-let c1 = new Soma()
+class Soma extends Calculo {
+    executar(...numeros: number[]): void{
+        this.resultado = numeros.reduce((t, a) => t + a)
+    }
+    
+}
+class Multiplicacao extends Calculo {
+    executar(...numeros: number[]): void{
+        this.resultado = numeros.reduce((t, a) => t * a)
+    }
+}
+
+let c1 = new Soma() //polimorfismo
 c1.executar(2,3,4,5)
 console.log(c1.getResultado())
 
@@ -271,3 +271,41 @@ console.log(c1.getResultado())
 
 
 //!!Classe Abstrata  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+//??Construtor Privado & Singleton --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+class Unico {
+    private static instance: Unico = new Unico
+    private constructor() {}
+
+    static getInstance(){
+        return Unico.instance
+    }
+
+    agora(){
+        return new Date
+    }
+}
+
+console.log(Unico.getInstance().agora())
+
+//??Construtor Privado & Singleton --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//!!Atributos Somente Leitura  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    class Aviao {
+        public readonly modelo: string
+
+        constructor(modelo: string, public readonly prefixo: string){
+            this.modelo = modelo
+        }
+            
+    }
+
+    const turboHelice = new Aviao('Tu-114','PT-ABC')
+    console.log(turboHelice)
+
+
+//!!Atributos Somente Leitura  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
