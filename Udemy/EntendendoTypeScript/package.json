@@ -1,5 +1,5 @@
 {
-  "name": "introducao",
+  "name": "curso-typescript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "live-server": "^1.1.0",
-    "prompt": "^1.2.1",
+    "@types/node": "^11.11.4",
+    "live-server": "^1.2.1",
     "systemjs": "^0.21.6"
   }
 }
