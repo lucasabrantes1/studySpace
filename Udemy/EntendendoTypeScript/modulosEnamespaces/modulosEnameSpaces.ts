@@ -40,12 +40,20 @@ namespace Geometria {
 }
 
 
-const PI = 2.99
+// const PI = 2.99
 
-console.log(Geometria.Area.circunferencia(10))
-console.log(Geometria.Area.retangulo(10, 20))
+// console.log(Geometria.Area.circunferencia(10))
+// console.log(Geometria.Area.retangulo(10, 20))
 
-console.log(PI)
-
+// console.log(PI)
 
 //??Namespaces Aninhados  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+//!!Módulos  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*Quando se trabalha com módulos geralmente eles não são interpretados pelo browser, para isso usa
+se a bliblioteca systemjs*/
+
+
+//!!Módulos  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
