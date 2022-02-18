@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "live-server": "^1.1.0",
-    "prompt": "^1.2.1"
+    "prompt": "^1.2.1",
+    "systemjs": "^0.21.6"
   }
 }
