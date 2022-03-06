@@ -18,4 +18,11 @@ console.log(echoDoDeCima(25)); //Note que o t foi passado como paremtro de numbe
 console.log(echoDoDeCima({ nome: 'lucas', idade: 27 }));
 // Resumidamente o tipo é definido no momento da execução da função.
 //!!Criando uma Função com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Usando Generics com Array #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//Generics disponiveis na API
+const avaliacoes = [10, 9.3, 7.3];
+avaliacoes.push(8.4);
+//  avaliacoes.push('5.5') 
+console.log(avaliacoes);
+//??Usando Generics com Array #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=generics.js.map
