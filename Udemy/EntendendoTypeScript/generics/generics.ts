@@ -25,17 +25,48 @@ function echoDoDeCima<T>(objeto: T): T{
     
     // Resumidamente o tipo é definido no momento da execução da função.
 //!!Criando uma Função com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-    
-    
+
+
 
 
 //??Usando Generics com Array #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
- //Generics disponiveis na API
- 
- const avaliacoes: Array<number> = [10,9.3,7.3]
- avaliacoes.push(8.4)  
+//Generics disponiveis na API
+
+const avaliacoes: Array<number> = [10,9.3,7.3]
+avaliacoes.push(8.4)  
 //  avaliacoes.push('5.5') 
- console.log(avaliacoes)
+console.log(avaliacoes)
 
     
 //??Usando Generics com Array #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//!!Usando Generics com Array #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+function imprimir<T>(args: T[]){
+    args.forEach(elemento => console.log(elemento))
+}
+
+imprimir([1,2,3])
+imprimir<number>([1,2,3])
+imprimir<string>(['1','2','3'])
+imprimir<string>(['a','c','b'])
+imprimir<{nome: string, idade: number}>([
+    {nome: 'lucas', idade: 24},
+    {nome: 'ANA', idade: 33},
+    {nome: 'elu', idade: 3},
+])
+
+
+
+type Aluno ={nome: string, idade: number}
+
+imprimir<Aluno>([
+    {nome: 'lucas', idade: 24},
+    {nome: 'ANA', idade: 33},
+    {nome: 'elu', idade: 3},
+])
+
+//!!Usando Generics com Array #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

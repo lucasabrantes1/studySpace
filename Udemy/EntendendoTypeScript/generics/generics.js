@@ -25,4 +25,23 @@ avaliacoes.push(8.4);
 //  avaliacoes.push('5.5') 
 console.log(avaliacoes);
 //??Usando Generics com Array #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Usando Generics com Array #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+function imprimir(args) {
+    args.forEach(elemento => console.log(elemento));
+}
+imprimir([1, 2, 3]);
+imprimir([1, 2, 3]);
+imprimir(['1', '2', '3']);
+imprimir(['a', 'c', 'b']);
+imprimir([
+    { nome: 'lucas', idade: 24 },
+    { nome: 'ANA', idade: 33 },
+    { nome: 'elu', idade: 3 },
+]);
+imprimir([
+    { nome: 'lucas', idade: 24 },
+    { nome: 'ANA', idade: 33 },
+    { nome: 'elu', idade: 3 },
+]);
+//!!Usando Generics com Array #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=generics.js.map
