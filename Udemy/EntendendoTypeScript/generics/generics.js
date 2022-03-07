@@ -43,5 +43,7 @@ imprimir([
     { nome: 'ANA', idade: 33 },
     { nome: 'elu', idade: 3 },
 ]);
-//!!Usando Generics com Array #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+const chamarEcho = echoDoDeCima;
+console.log(chamarEcho('Alguma coisa'));
+//??Tipo Função com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=generics.js.map
