@@ -45,29 +45,29 @@ console.log(avaliacoes)
 
 
 
-function imprimir<T>(args: T[]){
-    args.forEach(elemento => console.log(elemento))
-}
+// function imprimir<T>(args: T[]){
+//     args.forEach(elemento => console.log(elemento))
+// }
 
-imprimir([1,2,3])
-imprimir<number>([1,2,3])
-imprimir<string>(['1','2','3'])
-imprimir<string>(['a','c','b'])
-imprimir<{nome: string, idade: number}>([
-    {nome: 'lucas', idade: 24},
-    {nome: 'ANA', idade: 33},
-    {nome: 'elu', idade: 3},
-])
+// imprimir([1,2,3])
+// imprimir<number>([1,2,3])
+// imprimir<string>(['1','2','3'])
+// imprimir<string>(['a','c','b'])
+// imprimir<{nome: string, idade: number}>([
+//     {nome: 'lucas', idade: 24},
+//     {nome: 'ANA', idade: 33},
+//     {nome: 'elu', idade: 3},
+// ])
 
 
 
-type Aluno ={nome: string, idade: number}
+// type Aluno ={nome: string, idade: number}
 
-imprimir<Aluno>([
-    {nome: 'lucas', idade: 24},
-    {nome: 'ANA', idade: 33},
-    {nome: 'elu', idade: 3},
-])
+// imprimir<Aluno>([
+//     {nome: 'lucas', idade: 24},
+//     {nome: 'ANA', idade: 33},
+//     {nome: 'elu', idade: 3},
+// ])
 
 //!!Usando Generics com Array #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -75,7 +75,23 @@ imprimir<Aluno>([
 //??Tipo Função com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 type Echo = <T>(data: T) => T
 const chamarEcho: Echo = echoDoDeCima
-console.log(chamarEcho<string>('Alguma coisa'))
-
+// console.log(chamarEcho<string>('Alguma coisa'))
 
 //??Tipo Função com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//!!Criando Classes com Generics #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+class OperacaoBinaria {
+    constructor(public operando1: any,
+        public operando2: any) {}
+
+        executar(){
+            return this.operando1 + this.operando2
+        }
+}
+
+console.log(new OperacaoBinaria('Bom ','dia').executar())
+console.log(new OperacaoBinaria(3, 7).executar())
+console.log(new OperacaoBinaria({},{}).executar())
+//!!Criando Classes com Generics #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

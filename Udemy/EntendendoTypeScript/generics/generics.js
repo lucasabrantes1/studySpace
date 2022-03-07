@@ -24,26 +24,21 @@ const avaliacoes = [10, 9.3, 7.3];
 avaliacoes.push(8.4);
 //  avaliacoes.push('5.5') 
 console.log(avaliacoes);
-//??Usando Generics com Array #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-//!!Usando Generics com Array #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-function imprimir(args) {
-    args.forEach(elemento => console.log(elemento));
-}
-imprimir([1, 2, 3]);
-imprimir([1, 2, 3]);
-imprimir(['1', '2', '3']);
-imprimir(['a', 'c', 'b']);
-imprimir([
-    { nome: 'lucas', idade: 24 },
-    { nome: 'ANA', idade: 33 },
-    { nome: 'elu', idade: 3 },
-]);
-imprimir([
-    { nome: 'lucas', idade: 24 },
-    { nome: 'ANA', idade: 33 },
-    { nome: 'elu', idade: 3 },
-]);
 const chamarEcho = echoDoDeCima;
-console.log(chamarEcho('Alguma coisa'));
+// console.log(chamarEcho<string>('Alguma coisa'))
 //??Tipo Função com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//!!Criando Classes com Generics #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+class OperacaoBinaria {
+    constructor(operando1, operando2) {
+        this.operando1 = operando1;
+        this.operando2 = operando2;
+    }
+    executar() {
+        return this.operando1 + this.operando2;
+    }
+}
+console.log(new OperacaoBinaria('Bom ', 'dia').executar());
+console.log(new OperacaoBinaria(3, 7).executar());
+console.log(new OperacaoBinaria({}, {}).executar());
+//!!Criando Classes com Generics #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 //# sourceMappingURL=generics.js.map
