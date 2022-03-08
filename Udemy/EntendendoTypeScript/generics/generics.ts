@@ -1,4 +1,4 @@
-
+import { type } from "os"
 //??Reaseons to use --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 // function echo(objeto: any){
 //     return objeto  
@@ -6,6 +6,8 @@
 // console.log(echo('Lucas').length)
 // console.log(25).length ---> a nomeclatura do generics deixaria de forma mais explicita esse erro.
 // console.log(echo({nome: 'lucas', idade: 27}))
+
+
 
 //??Reaseons to use --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -211,7 +213,7 @@ class Fila<T extends number | string > /*Só pode ser exercido o tipo number*/{
 
     proximo(): T | null {
         if(this.fila.length >= 0 && this.fila[0]){
-
+            
             const primeiro = this.fila[0]
             this.fila.splice(0, 1)
             return primeiro
@@ -248,3 +250,63 @@ novaFila.imprimir()
 
 
 //!!Restrições (Constraints) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+
+
+
+
+//??Desafio do Módulo --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+/*
+Desafio mapa
+Array de objetos chave valor -> itens
+métodos obter chave, colocar c v
+limpar imprimir
+*/
+// Desafio Mapa
+// Array de Objetos (Chave/Valor) -> itens
+// Métodos: obter(Chave), colocar({ C, V })
+// limpar(), imprimir()
+
+type Par<C, V> = {chave: C, valor: V}
+
+class Mapa<C, V>{
+    itens: Array<Par<C, V>> = new Array<Par<C, V>>()
+
+    obter(chave: C): Par<C, V> | null{
+        const resultado = this.itens.filter(i => i.chave === chave)
+        return resultado ? resultado[0] : null
+    }
+
+    colocar(par: Par<C, V>){
+        const encontrado = this.obter(par.chave)
+        if(encontrado){
+            encontrado.valor = par.valor
+        } else {
+            this.itens.push(par)
+        }
+    }
+
+    limpar() {
+        this.itens = new Array<Par<C, V>>()
+    }
+
+    imprimir (){
+        console.log(this.itens)
+    }
+}
+ 
+const mapa = new Mapa<number, string>()
+mapa.colocar({ chave: 1, valor: 'Pedro' })
+mapa.colocar({ chave: 2, valor: 'Rebeca' })
+mapa.colocar({ chave: 3, valor: 'Maria' })
+mapa.colocar({ chave: 1, valor: 'Gustavo' })
+ 
+console.log(mapa.obter(2))
+mapa.imprimir()
+mapa.limpar()
+mapa.imprimir()
+
+
+//??Desafio do Módulo --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
