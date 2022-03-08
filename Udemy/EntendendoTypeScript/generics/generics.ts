@@ -82,16 +82,36 @@ const chamarEcho: Echo = echoDoDeCima
 
 //!!Criando Classes com Generics #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-class OperacaoBinaria {
-    constructor(public operando1: any,
-        public operando2: any) {}
+// class OperacaoBinaria {
+//     constructor(public operando1: any,
+//         public operando2: any) {}
 
-        executar(){
-            return this.operando1 + this.operando2
-        }
+//         executar(){
+//             return this.operando1 + this.operando2
+//         }
+// }
+
+// console.log(new OperacaoBinaria('Bom ','dia').executar())
+// console.log(new OperacaoBinaria(3, 7).executar())
+// console.log(new OperacaoBinaria({},{}).executar())
+//!!Criando Classes com Generics #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//??Criando Classes com Generics #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+abstract class OperacaoBinaria<T, R> {
+    constructor(public operando1: T,
+        public operando2: T) {}
+
+        abstract executar(): R
+}
+class SomaBinaria extends OperacaoBinaria<number, number>{
+    executar(): number {
+        return this.operando1 + this.operando2
+    }
 }
 
-console.log(new OperacaoBinaria('Bom ','dia').executar())
-console.log(new OperacaoBinaria(3, 7).executar())
-console.log(new OperacaoBinaria({},{}).executar())
-//!!Criando Classes com Generics #01 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+console.log(new SomaBinaria(3, 4).executar())
+
+//??Criando Classes com Generics #02 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
