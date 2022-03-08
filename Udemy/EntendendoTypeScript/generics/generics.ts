@@ -145,14 +145,62 @@ console.log(new SomaBinaria(3, 4).executar())
 
 
 //??Desafio Classes com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
- /*
- Desafio classe fila
- Atributo Fila array
- Metodos entrar proximo imprimir
- */
-class Fila<T>{
-    private fila: Array<T>
+/*
+Desafio classe fila
+Atributo Fila array
+Metodos entrar proximo imprimir
+*/
+// class Fila<T>{
+//     private fila: Array<T>
+    
+//     constructor(...args: T[]){
+//         this.fila = args
+//     }
 
+//     entrar(elemento: T){
+//         this.fila.push(elemento)
+//     }
+
+//     proximo(): T | null {
+//         if(this.fila.length >= 0 && this.fila[0]){
+
+//             const primeiro = this.fila[0]
+//             this.fila.splice(0, 1)
+//             return primeiro
+//         } else {
+            
+//             return null
+//         }
+//     }
+    
+//     imprimir(){
+//         console.log(this.fila)
+//     }
+// }
+
+// const fila = new Fila<string>('Gui','Pedro','Lucas','Ana','Lu','Elu')
+// fila.imprimir()
+// fila.entrar('Lucas')
+// fila.imprimir()
+// console.log(fila.proximo())
+// console.log(fila.proximo())
+// console.log(fila.proximo())
+// console.log(fila.proximo())
+// console.log(fila.proximo())
+
+
+// fila.imprimir()
+
+
+//??Desafio Classes com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+//!!Restrições (Constraints) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+class Fila<T extends number | string > /*Só pode ser exercido o tipo number*/{
+    private fila: Array<T>
+    
     constructor(...args: T[]){
         this.fila = args
     }
@@ -168,11 +216,11 @@ class Fila<T>{
             this.fila.splice(0, 1)
             return primeiro
         } else {
-
+            
             return null
         }
     }
-
+    
     imprimir(){
         console.log(this.fila)
     }
@@ -190,6 +238,13 @@ console.log(fila.proximo())
 
 
 fila.imprimir()
- 
 
-//??Desafio Classes com Generics --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+const novaFila = new Fila<number>(1, 2, 3)
+novaFila.imprimir()
+
+// const outraFila = new Fila<boolean>(true, false)
+
+
+
+//!!Restrições (Constraints) --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
