@@ -32,27 +32,54 @@
 //!!Alterando Construtor com Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 // @logarClasseSe(true)
-@logarObjeto
+// @logarObjeto
+// class Eletrodomestico {
+//     constructor(){
+//         console.log('Novo...')
+//     }
+// }
+
+
+// type Construtor = {new(...args: any[]): {}}
+
+// function logarObjeto(construtor: Construtor){
+//     console.log('Carregado...')
+//     return class extends construtor {
+//         constructor(...args: any[]) {
+//             console.log('Antes...')
+//             super(...args)
+//             console.log('Depois...')
+//         }
+//     }
+// }
+
+// new Eletrodomestico()
+
+//!!Alterando Construtor com Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
+//??Adicionando Método com Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+interface Eletrodomestico {
+    imprimir?(): void
+}
+@imprimivel
 class Eletrodomestico {
     constructor(){
         console.log('Novo...')
     }
 }
 
-
-type Construtor = {new(...args: any[]): {}}
-
-function logarObjeto(construtor: Construtor){
-    console.log('Carregado...')
-    return class extends construtor {
-        constructor(...args: any[]) {
-            console.log('Antes...')
-            super(...args)
-            console.log('Depois...')
-        }
+function imprimivel(constructor: Function){
+    constructor.prototype.imprimir = function(){
+        console.log(this)
     }
 }
 
-new Eletrodomestico()
+// (<any>new Eletrodomestico()).imprimir()
+// (<any>new Eletrodomestico()).imprimir()
+const eletro = new Eletrodomestico()
+eletro.imprimir && eletro.imprimir()
 
-//!!Alterando Construtor com Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Adicionando Método com Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
