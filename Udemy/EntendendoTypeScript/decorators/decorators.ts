@@ -1,22 +1,26 @@
 //!!Criando Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-/*O decorator é uma função, e essa função*/
+// /*O decorator é uma função, e essa função*/
+// @logarClasseSe(false)
+// // @logarClasse
+// class Eletrodomestico{
+//     constructor(){
+//         console.log('Novo...')
+//     }
+// }
 
-@logarClasse
-class Eletrodomestico{
-    constructor(){
-        console.log('Novo...')
-    }
-}
+// function logarClasse(construtor: Function){
+//     console.log(construtor)
+// }
 
-function logarClasse(construtor: Function){
-    console.log(construtor)
-}
-
-new Eletrodomestico()
 
 //!!Criando Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 
+//??Decorator Factory --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+// function logarCLaseSe(valor: boolean){
+//     return valor ? logarClasse : null
+// }
 
 
-//??Desafio do Módulo --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+//??Decorator Factory --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
