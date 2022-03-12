@@ -61,25 +61,73 @@
 
 //??Adicionando Método com Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-interface Eletrodomestico {
-    imprimir?(): void
-}
-@imprimivel
-class Eletrodomestico {
-    constructor(){
-        console.log('Novo...')
-    }
-}
+// interface Eletrodomestico {
+//     imprimir?(): void
+// }
+// @imprimivel
+// class Eletrodomestico {
+//     constructor(){
+//         console.log('Novo...')
+//     }
+// }
 
-function imprimivel(constructor: Function){
-    constructor.prototype.imprimir = function(){
-        console.log(this)
-    }
-}
+// function imprimivel(constructor: Function){
+//     constructor.prototype.imprimir = function(){
+//         console.log(this)
+//     }
+// }
 
-// (<any>new Eletrodomestico()).imprimir()
-// (<any>new Eletrodomestico()).imprimir()
-const eletro = new Eletrodomestico()
-eletro.imprimir && eletro.imprimir()
+// // (<any>new Eletrodomestico()).imprimir()
+// // (<any>new Eletrodomestico()).imprimir()
+// const eletro = new Eletrodomestico()
+// eletro.imprimir && eletro.imprimir()
 
 //??Adicionando Método com Decorator de Classe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//!!Decorator de Método --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+class ContaCorrente {
+    private saldo: number
+
+    constructor(saldo: number){
+        this.saldo = saldo
+    }
+
+    @congelar
+    sacar(valor: number){
+        if(valor <= this.saldo){
+            this.saldo -= valor
+            return true
+        } else {
+            return false
+        }
+    }
+
+    @congelar
+    getSaldo() {
+        return this.saldo
+    }
+}
+
+const cc = new ContaCorrente(10248.570)
+cc.sacar(5000)
+console.log(cc.getSaldo())
+
+
+// cc.getSaldo = function(){
+//     return this['saldo'] + 7000
+// }
+
+console.log(cc.getSaldo)
+
+
+// Object.freeze
+function congelar(alvo: any, nomeMetodo: string,
+    descritor: PropertyDescriptor){
+    console.log(alvo)
+    console.log(nomeMetodo)
+    descritor.writable = false    
+    }
+
+//!!Decorator de Método --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
