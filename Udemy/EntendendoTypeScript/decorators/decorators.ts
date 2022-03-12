@@ -88,6 +88,7 @@
 //!!Decorator de Método --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 class ContaCorrente {
+    @naoNegativo
     private saldo: number
 
     constructor(saldo: number){
@@ -131,3 +132,27 @@ function congelar(alvo: any, nomeMetodo: string,
     }
 
 //!!Decorator de Método --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+//??Decorator de Atributoe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+function naoNegativo(alvo: any, nomePropriedade: string) {
+    delete alvo[nomePropriedade]
+    Object.defineProperty(alvo, nomePropriedade, {
+        get: function(): any {
+            return alvo["_" + nomePropriedade]
+        },
+        set: function(valor: any): void {
+            if(valor < 0 ){
+                throw new Error('Saldo Inválido')
+            } else {
+                alvo["_" + nomePropriedade] = valor
+            }
+        }
+    })
+}
+
+
+
+//??Decorator de Atributoe --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
