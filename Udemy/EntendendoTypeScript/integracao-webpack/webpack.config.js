@@ -18,3 +18,18 @@ module.exports = {
         }]
     }
 }
+
+// copy-webpack-plugin
+
+// plugins:[
+//     new CopyPlugin([
+//         {from: 'public'},
+//     ])
+// ],
+
+
+// plugins: [
+//     new CopyPlugin({
+//         patterns: [{from: 'public'}]
+//     })
+// ]
