@@ -5,8 +5,6 @@ interface ContadorValorProps {
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default (props: ContadorValorProps) => {
-    return (
+export default (props: ContadorValorProps) => 
         <p>{props.contador}</p>
-    )
-}
+
