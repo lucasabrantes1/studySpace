@@ -27,7 +27,18 @@
       "react-app",
       "react-app/jest"
     ]
+    
   },
+  "import/no-anonymous-default-export": ["error", {
+    "allowArray": false,
+    "allowArrowFunction": false,
+    "allowAnonymousClass": false,
+    "allowAnonymousFunction": false,
+    "allowCallExpression": false,
+    "allowLiteral": false,
+    "allowObject": false
+  }],
+ 
   "browserslist": {
     "production": [
       ">0.2%",
@@ -39,5 +50,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+
   }
+ 
 }
