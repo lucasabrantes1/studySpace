@@ -7,7 +7,7 @@ app.use(cors({origin: '*'}))
 
 //métodos http - get - post - put - delete
 //http://localhost:3333/users
-// é retornado a porta do  app.listen //11 - linha
+// é retornado a porta do  app.listen 11 - linha
 
 //Tipos de parâmetros
 //--------------------
