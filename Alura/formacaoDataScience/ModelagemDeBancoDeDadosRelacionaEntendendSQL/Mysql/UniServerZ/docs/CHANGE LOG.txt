@@ -1,0 +1,65 @@
+﻿ ################################################################################
+# File name: CHANGE LOG.txt
+# Created By: The Uniform Server Development Team
+################################################################################
+
+ Uniform Server ZeroXIV releases are versions with pre-installed ZeroXIV modules
+ producing a standard WAMP (Windows, Apache, MySQL and PHP) server
+ package. After extracting, servers are ready to run either from a
+ USB memory stick or PC. Apart from changing the MySQL password
+ (optional) there is no configuration required.
+
+ The pre-configured versions of Uniform Server ZeroXIV should suite most
+ users! An alternative is to assemble a bespoke server from the available
+ modules provided on the following page:  
+
+ ZeroXIVmodules  (Plugins):
+ http://sourceforge.net/projects/miniserver/files/Uniform%20Server%20ZeroXIV/ZeroXIVmodules/
+
+ --------------------------------
+ Uniform Server ZeroXIV Change Log
+ --------------------------------
+
+  14.0.3  - ZeroXIVmodules modules included:
+          - ZeroXIV_controller_2_3_2.exe
+          - ZeroXIV_documentation_1_0_2.exe
+          - ZeroXIV_apache_2_4_46_j.exe
+          - ZeroXIV_mysql_8_0_23.exe
+          - ZeroXIV_php_8_0_3_j.exe
+          - ZeroXIV_phpmyadmin_5_1_0.exe
+
+  14.0.2  - ZeroXIVmodules modules included:
+          - ZeroXIV_controller_2_3_1.exe
+          - ZeroXIV_documentation_1_0_1.exe
+          - ZeroXIV_apache_2_4_43_j.exe
+          - ZeroXIV_mysql_8_0_18.exe
+          - ZeroXIV_php_7_4_5_j.exe
+          - ZeroXIV_phpmyadmin_5_0_2.exe
+		  
+  14.0.1  - ZeroXIVmodules modules included:
+          - ZeroXIV_controller_2_3_1.exe
+          - ZeroXIV_documentation_1_0_1.exe
+          - ZeroXIV_apache_2_4_41_j.exe
+          - ZeroXIV_mysql_8_0_18.exe
+          - ZeroXIV_php_7_4_0_j.exe
+          - ZeroXIV_phpmyadmin_4_9_2.exe
+		  
+  14.0.0  - First Release. ZeroXIVmodules modules included:
+          - ZeroXIV_controller_2_3_0.exe
+          - ZeroXIV_documentation_1_0_0.exe
+          - ZeroXIV_apache_2_4_39_j.exe
+          - ZeroXIV_mysql_8_0_17.exe
+          - ZeroXIV_php_7_3_9_j.exe
+          - ZeroXIV_phpmyadmin_4_9_0_1.exe
+
+
+ -----------------------------------------------------------------------------
+
+  The authors were trying to make the best product so they cannot be held
+  responsible for any type of damage or problems caused by using this or
+  another software.
+
+ --------------------------------------o0o------------------------------------
+            Copyright 2002-2020 The Uniform Server Development Team
+                            All rights reserved.
+
