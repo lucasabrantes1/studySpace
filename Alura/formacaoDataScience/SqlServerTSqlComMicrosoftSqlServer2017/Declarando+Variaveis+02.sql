@@ -29,5 +29,16 @@ PRINT @DATA2
 PRINT @IDADE2
 
 
+/*Crie uma variável chamada NUMNOTAS e atribua a ela o número de notas fiscais do dia 01/01/2017. Mostre na saída do script o valor da variável.*/
+
+DECLARE @NUMNOTAS INT
+DECLARE @DIA DATE
+
+SET @DIA = '20170101'
+
+SELECT @NUMNOTAS = COUNT(*) FROM [NOTAS FISCAIS] WHERE
+DATA = @DIA
+PRINT @NUMNOTAS
+
 
 
