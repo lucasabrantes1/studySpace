@@ -10,3 +10,27 @@ END
 
 EXEC BuscaPorEntidades @ENTIDADE = 'CLIENTES'
 EXEC BuscaPorEntidades @ENTIDADE = 'VENDEDORES'
+
+/*Crie uma segunda stored procedure chamada BuscaPorEntidadesCompleta com o mesmo código da de cima,
+ mas acrescente a entidade PRODUTOS. Das entidades, liste apenas os seus identificadores e os seus nomes.*/
+
+
+
+
+CREATE PROCEDURE BuscaPorEntidadesCompleta @ENTIDADE AS VARCHAR(10)
+AS
+BEGIN
+IF @ENTIDADE = 'CLIENTES'
+    SELECT [CPF] AS IDENTIFICADOR, [NOME] AS DESCRITOR 
+        FROM [TABELA DE CLIENTES]
+ELSE IF @ENTIDADE = 'VENDEDORES'
+    SELECT [MATRICULA] AS IDENTIFICADOR, [NOME] AS DESCRITOR 
+        FROM [TABELA DE VENDEDORES]
+ELSE IF @ENTIDADE = 'PRODUTOS'
+    SELECT [CODIGO DO PRODUTO] AS IDENTIFICADOR, [NOME DO PRODUTO] 
+        AS DESCRITOR FROM [TABELA DE PRODUTOS]
+END
+
+EXEC BuscaPorEntidadesCompleta @ENTIDADE = 'CLIENTES'
+EXEC BuscaPorEntidadesCompleta @ENTIDADE = 'VENDEDORES'
+EXEC BuscaPorEntidadesCompleta @ENTIDADE = 'PRODUTOS'
