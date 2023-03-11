@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author LucasSilvaDantasAbra
+ *
+ */
+module estruturaSequencial {
+}
