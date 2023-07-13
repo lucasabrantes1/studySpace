@@ -1,11 +1,28 @@
-.header{
-    background: var(--gray-800);
+.header {
+    position: relative;
+    background: var(--gray-700);
     display: flex;
     justify-content: center;
-    padding: 1.25rem 0;
+    align-items: center;
+    height: 12.5rem;
+    width: 100%;
 }
-
 
 .header img {
-    height: 2rem;
+    height: 3rem;
+    width: 7.875rem;
 }
+
+.taskInputForm {
+    position: absolute;
+    bottom: -25px; /* Ajuste conforme necessário */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white); /* Mude para a cor de fundo desejada */
+    padding: 1.25rem;
+    margin: auto;
+    width: 50%; /* Ajuste a largura conforme necessário */
+   }

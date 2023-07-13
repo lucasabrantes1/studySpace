@@ -1,0 +1,31 @@
+.taskForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 5000px; 
+  margin-bottom: 500000px;
+}
+
+  
+
+.taskInputBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--gray-700); 
+  height: 100px; 
+}
+
+.taskInputForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px; 
+  background-color: var(--white); 
+  height: 50px; 
+}
+
+
