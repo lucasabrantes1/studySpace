@@ -15,14 +15,14 @@
 
 .taskInputForm {
     position: absolute;
-    bottom: -25px; /* Ajuste conforme necessário */
+    bottom: -1.813rem; 
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--white); /* Mude para a cor de fundo desejada */
+    background-color: var(--white); 
     padding: 1.25rem;
     margin: auto;
-    width: 50%; /* Ajuste a largura conforme necessário */
+    width: 50%; 
    }

@@ -20,7 +20,7 @@ interface HeaderProps {
                           onChange={handleNewTaskChange}
                           required
                       />
-                      <button type="submit">Add Task</button>
+                      <button type="submit">Criar</button>
                   </form>
               </div>
           </header>

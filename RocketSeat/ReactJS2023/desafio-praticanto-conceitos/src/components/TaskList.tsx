@@ -1,5 +1,5 @@
-import styles from './TaskList.module.css'
-import { FormEvent, useState, ChangeEvent } from 'react'
+import styles from "./TaskList.module.css";
+import { FormEvent, useState, ChangeEvent } from "react";
 
 interface Task {
   title: string;
@@ -15,60 +15,82 @@ interface TaskListProps {
   taskList: TaskListType;
 }
 
-export function TaskList({taskList}:TaskListProps){
-    const [newTaskTitle, setNewTaskTitle] = useState('')
+interface TaskListProps {
+  taskList: TaskListType;
+  onTaskToggle: (taskIndex: number) => void;
+  onDeleteTask: (taskIndex: number) => void;
+}
 
-    function handleCreateNewTask(event: FormEvent){
-      event.preventDefault()
+export function TaskList({
+  taskList,
+  onTaskToggle,
+  onDeleteTask,
+}: TaskListProps) {
+  const [newTaskTitle, setNewTaskTitle] = useState("");
 
-      taskList.tasks.push({
-        title: newTaskTitle,
-        completed: false
-      });
+  function handleCreateNewTask(event: FormEvent) {
+    event.preventDefault();
 
-      setNewTaskTitle('')
-    }
+    taskList.tasks.push({
+      title: newTaskTitle,
+      completed: false,
+    });
 
-    function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>){
-      event.target.setCustomValidity('')
-      setNewTaskTitle(event.target.value)
-    }
+    setNewTaskTitle("");
+  }
 
-    function handleToggleTaskCompleted(taskToToggle: Task){
-      taskToToggle.completed = !taskToToggle.completed
-    }
+  function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>) {
+    event.target.setCustomValidity("");
+    setNewTaskTitle(event.target.value);
+  }
 
-// ...
+  function handleToggleTaskCompleted(taskToToggle: Task) {
+    taskToToggle.completed = !taskToToggle.completed;
+  }
 
-return (
-  <article className={styles.taskList}>
-    <div className={styles.taskInputBackground}>
-      <div className={styles.taskInputForm}>
-        <form onSubmit={handleCreateNewTask}>
-          <input 
-            type="text" 
-            value={newTaskTitle}
-            onChange={handleNewTaskChange}
-            required
-          />
-          <button type="submit">Add Task</button>
-        </form>
+  return (
+    <article className={styles.taskList}>
+      <div className={styles.taskCount}>
+        <div className={styles.taskCreated}>
+          <span className={styles.createdTasks}>
+            Tarefas criadas{" "}
+            <span className={styles.numberHighlight}>
+              {taskList.tasks.length}
+            </span>
+          </span>
+        </div>
+        <div className={styles.spacer}></div>
+        <div className={styles.taskCompleted}>
+          <span className={styles.completedTasks}>
+            Concluídas{" "}
+            <span className={styles.numberHighlight}>
+              {taskList.tasks.filter((task) => task.completed).length}
+            {" "}
+
+            de {taskList.tasks.length}
+            </span>
+          </span>
+        </div>
       </div>
-    </div>
-    <ul>
-      {taskList.tasks.map((task, index) => (
-        <li key={index}>
-          <input 
-            type="checkbox" 
-            checked={task.completed} 
-            onChange={() => handleToggleTaskCompleted(task)}
-          />
-          {task.title}
-        </li>
-      ))}
-    </ul>
-  </article>
-)
-// ...
 
+      <ul>
+        {taskList.tasks.map((task, index) => (
+          <li key={index} className={styles.taskItemContainer}>
+            <input
+              type="checkbox"
+              checked={task.completed}
+              onChange={() => onTaskToggle(index)}
+            />
+            <div className={styles.taskContent}>
+              <span className={task.completed ? styles.completedTask : ""}>
+                {task.title}
+              </span>
+              <div className={styles.spacer}></div>
+            </div>
+            <button onClick={() => onDeleteTask(index)}>Excluir</button>
+          </li>
+        ))}
+      </ul>
+    </article>
+  );
 }

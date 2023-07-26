@@ -6,9 +6,20 @@ import styles from "./App.module.css";
 
 import "./global.css";
 
+interface Task {
+  title: string;
+  completed: boolean;
+}
+
+interface TaskListType {
+  id: number;
+  tasks: Task[];
+}
+
+
+
 export function App() {
-  // Inicia uma lista de tarefas vazia
-  const [taskList, setTaskList] = useState({
+  const [taskList, setTaskList] = useState<TaskListType>({
     id: 1,
     tasks: [],
   });
@@ -21,9 +32,35 @@ export function App() {
 
   const handleCreateNewTask = (event: FormEvent) => {
     event.preventDefault();
-    // Aqui você deve criar uma nova tarefa e adicioná-la ao taskList
-    // Não se esqueça de limpar o campo de texto com setNewTaskTitle('')
+
+    if (newTaskTitle !== '') {
+        setTaskList({
+            id: taskList.id,
+            tasks: [...taskList.tasks, { title: newTaskTitle, completed: false }],
+        });
+
+        setNewTaskTitle('');
+    }
   }
+
+  const handleToggleTaskCompleted = (taskIndex: number) => {
+    setTaskList((prevState) => {
+      const newTasks = [...prevState.tasks];
+      newTasks[taskIndex] = { ...newTasks[taskIndex], completed: !newTasks[taskIndex].completed };
+      
+      return { ...prevState, tasks: newTasks };
+    });
+}
+
+
+const handleDeleteTask = (taskIndex: number) => {
+  setTaskList((prevState) => {
+    const newTasks = [...prevState.tasks];
+    newTasks.splice(taskIndex, 1);
+
+    return { ...prevState, tasks: newTasks };
+  });
+}
 
   return (
     <div className={styles.mainContainer}>
@@ -32,7 +69,12 @@ export function App() {
         handleNewTaskChange={handleNewTaskChange}
         handleCreateNewTask={handleCreateNewTask}
       />
+      <TaskList taskList={taskList} onTaskToggle={handleToggleTaskCompleted} onDeleteTask={handleDeleteTask} />
+
+
 
     </div>
   );
 }
+
+
