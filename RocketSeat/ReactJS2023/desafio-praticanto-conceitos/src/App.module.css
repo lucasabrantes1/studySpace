@@ -25,5 +25,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Se você também deseja alinhar verticalmente */
 }
 
+
+.taskList, .header {
+  max-width: 46.25rem; /* ou qualquer largura desejada */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}

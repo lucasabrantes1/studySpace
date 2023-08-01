@@ -15,26 +15,35 @@
   width: 100%;
   background-color: var(--gray-700);
   height: 10rem;
+    background-color: red;
 }
 
 .taskInputForm {
+  position: absolute;
+  bottom: -1.813rem;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80rem;
   background-color: var(--white);
-  height: 5rem;
+  padding: 1.25rem;
+  margin: auto;
+  width: 46rem; /* 736px */
+  background-color: red;
 }
 
 .taskList {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 46rem; 
+  align-items: center;
+  width: 48.5rem;
   height: 4.5rem;
   padding: 0 2rem;
   padding: 1rem 1rem; /* adicione padding vertical e horizontal aqui */
-  gap: 0.75rem; /* adicione gap aqui */
+  gap: -2rem;
+  
+  background-color: blue;
 }
 
 .taskListItem {
@@ -43,27 +52,35 @@
   justify-content: space-between;
   width: 100%; 
   padding: 1rem 1rem;
+  
 }
 
 .taskListItem input[type="checkbox"] {
-  margin-right: -50rem;
-
+  margin-right: 0.75rem;
+  
 }
 
 .completedTask {
   text-decoration: line-through;
+  
 }
 
 ul {
   list-style-type: none;
   width: 100%;
   padding-top: 24px;
-  
+  background-color: red;
+  width: 48.5rem;
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+  list-style: none; /* Remove os marcadores de lista */
 }
 
 .taskListItem button {
   border: none;
   cursor: pointer;
+  margin-left: 0.75rem; /* Novo */
+  
 }
 
 .taskItemContainer {
@@ -73,9 +90,13 @@ ul {
   width: 100%;
   margin-top: 0.75rem;
   background-color: var(--gray-400);
-  width: 46rem;
+  width: 48.5rem;
   height: 4.5rem;
   border-radius: 0.5rem;
+  padding: 1rem;
+  align-items: center;
+  background-color: red;
+  justify-content: center;
 }
 
 .checkboxAndContent {
@@ -89,7 +110,11 @@ ul {
 
 .taskContent {
   margin-left: 1rem;
-  text-align: center;  
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; 
+  
 }
 
 .taskCount {
@@ -97,20 +122,27 @@ ul {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0; 
+  margin: 0;
   padding: 1.5rem 0;
   padding-top: 4rem;
+  width: 100%;
+  width: 48.5rem;
+  
 }
 
 .createdTasks {
   font-weight: bold;
   color: var(--blue); 
   font-size: 0.875rem;
+  width: 48.5rem;
 }
 
 .completedTasks {
   font-weight: bold;
   color: var(--purple);
   font-size: 0.875rem;
+  width: 48.5rem;
 }
 
 .numberHighlight {
@@ -122,8 +154,37 @@ ul {
   font-size: 0.875rem;
   width: 24px;
   height: 19px;
+  
 }
 
 .spacer {
   flex-grow: 1;
+  
 }
+
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 2px solid #000;
+
+}
+
+
+input[type="checkbox"]:checked:before {
+  content: "✓"; /* você pode substituir por qualquer ícone de sua escolha */
+  color: #000;
+  text-align: center;
+  
+}
+

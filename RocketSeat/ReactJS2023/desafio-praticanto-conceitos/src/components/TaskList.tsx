@@ -13,14 +13,9 @@ export interface TaskListType {
 
 interface TaskListProps {
   taskList: TaskListType;
-}
-
-interface TaskListProps {
-  taskList: TaskListType;
   onTaskToggle: (taskIndex: number) => void;
   onDeleteTask: (taskIndex: number) => void;
 }
-
 export function TaskList({
   taskList,
   onTaskToggle,
