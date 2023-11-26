@@ -15,7 +15,7 @@
   width: 100%;
   background-color: var(--gray-700);
   height: 10rem;
-    background-color: red;
+    
 }
 
 .taskInputForm {
@@ -30,7 +30,7 @@
   padding: 1.25rem;
   margin: auto;
   width: 46rem; /* 736px */
-  background-color: red;
+  
 }
 
 .taskList {
@@ -43,7 +43,6 @@
   padding: 1rem 1rem; /* adicione padding vertical e horizontal aqui */
   gap: -2rem;
   
-  background-color: blue;
 }
 
 .taskListItem {
@@ -69,7 +68,7 @@ ul {
   list-style-type: none;
   width: 100%;
   padding-top: 24px;
-  background-color: red;
+  
   width: 48.5rem;
   padding: 0; /* Remove o padding padrão */
   margin: 0; /* Remove a margem padrão */
@@ -95,7 +94,7 @@ ul {
   border-radius: 0.5rem;
   padding: 1rem;
   align-items: center;
-  background-color: red;
+  
   justify-content: center;
 }
 
@@ -119,15 +118,15 @@ ul {
 
 .taskCount {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 100%;
   padding: 0; 
   margin: 0;
   padding: 1.5rem 0;
   padding-top: 4rem;
-  width: 100%;
-  width: 48.5rem;
+
+  width: 46rem;
   
 }
 
@@ -136,13 +135,17 @@ ul {
   color: var(--blue); 
   font-size: 0.875rem;
   width: 48.5rem;
+  margin: auto;
 }
 
 .completedTasks {
-  font-weight: bold;
   color: var(--purple);
-  font-size: 0.875rem;
-  width: 48.5rem;
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  
 }
 
 .numberHighlight {
@@ -154,7 +157,14 @@ ul {
   font-size: 0.875rem;
   width: 24px;
   height: 19px;
+  font-family: Inter;
+  font-size: 0.75rem;
   
+  font-weight: 700;
+
+font-style: normal;
+
+line-height: normal;
 }
 
 .spacer {

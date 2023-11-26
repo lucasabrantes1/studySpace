@@ -27,22 +27,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--white); 
+    background-color: var(--Gray-500); 
     padding: 1.25rem;
     margin: auto;
     width: 48.5rem;
-    background-color: red;
     align-items: center;
    }
+
+.input {
+    border-radius: 0.5rem;
+    border: 1px solid var(--Gray-700 );
+    background: var(--Gray-500);
+}
 
 
    .taskInputForm form button {
     background: var(--blue-dark);
     color: var(--gray-100);
-    border-radius: 8px; /* 8px */
-    width: 5.625rem; /* 90px */
-    height: 3.25rem; /* 52px */
-    padding-left: 1rem; /* 16px */
+    border-radius: 8px; 
+    width: 5.625rem; 
+    height: 3.25rem; 
+    padding-left: 1rem; 
     font-weight: 14;
     align-items: center;
     justify-content: center;
@@ -53,8 +58,8 @@
 .createButton {
     display: flex;
     align-items: center;
-    padding-right: 0.125rem; /* 2px */
-    gap: 0.5rem; /* 8px */
+    padding-right: 0.125rem; 
+    gap: 0.5rem; 
     
 }
 
