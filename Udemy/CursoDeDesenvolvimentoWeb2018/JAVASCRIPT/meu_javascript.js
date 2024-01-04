@@ -1,1 +1,0 @@
-alert('Teste de inclusão de JavaScript');

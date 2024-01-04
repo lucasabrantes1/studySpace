@@ -1,5 +1,0 @@
-RewriteEngine On
-RewriteBase /
-
-# Reescrever URLs da forma /front-end-teste/nome-do-candidato/obrigado-pelo-contato/
-RewriteRule ^front-end-teste/([a-zA-Z0-9_-]+)/obrigado-pelo-contato/?$ agradecimento.php?nome=$1 [L,QSA]
