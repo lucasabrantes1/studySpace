@@ -8,7 +8,8 @@
 
     public bool Disponivel { get; set; }
 
-    public string NomeCompleto { get; set; }
+    public string DescricaoResumida =>
+        $"A musica {Nome} pertence a banda {Artista}";  
 
     public void ExibirFichaTecnica(){
         Console.WriteLine($"Nome: {Nome}");
@@ -21,4 +22,6 @@
         else { Console.WriteLine("Adquira o plano Plus+\n");
         }
     }
+
+
 }

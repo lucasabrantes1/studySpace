@@ -2,8 +2,8 @@
 musica1.Nome = "Ego brain";
 musica1.Artista = "System of a down";
 musica1.Duracao = 273;
-musica2.Disponivel = true;
-Console.WriteLine(musica1.disponivel);
+musica1.Disponivel = true;
+Console.WriteLine(musica1.Disponivel);
 
 Musica musica2 = new Musica();
 musica2.Nome = "Vertigo";
