@@ -6,7 +6,7 @@
         Nome = nome;  
     }
 
-    public string Nome {  get; }
+    public string Nome { get; }
 
     public Banda Artista { get; }
 
@@ -19,7 +19,7 @@
 
     public void ExibirFichaTecnica(){
         Console.WriteLine($"Nome: {Nome}");
-        Console.WriteLine($"Artista: {Artista}");
+        Console.WriteLine($"Artista: {Artista.Nome}");
         Console.WriteLine($"Duração: {Duracao}");
         Console.WriteLine($"Disponível: {Disponivel}");
         if(Disponivel == true){

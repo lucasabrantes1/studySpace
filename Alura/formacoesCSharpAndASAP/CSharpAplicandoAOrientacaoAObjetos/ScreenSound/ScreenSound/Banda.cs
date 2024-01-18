@@ -2,10 +2,9 @@ class Banda
 {
     private List<Album> albums = new List<Album>();
 
-    public Banda(string nome);
+    public Banda(string nome)
     {
-        
-        Nome = nome;
+       Nome = nome;
     }
 
     public string Nome { get; }

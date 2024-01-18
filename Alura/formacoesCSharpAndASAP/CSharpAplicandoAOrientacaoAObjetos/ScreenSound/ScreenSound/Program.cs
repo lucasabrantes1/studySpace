@@ -17,9 +17,11 @@ Musica musica2 = new Musica(queen, "Bohemian Rhaosody")
 
 albumDoQueen.AdicionarMusica(musica1);
 albumDoQueen.AdicionarMusica(musica2);
-
-musica1.ExibirFichaTecnica()
 queen.AdicionarAlbum(albumDoQueen);
+
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
+albumDoQueen.ExibirMusicasDoAlbum();
 queen.ExibirDiscografia();
 
 Console.ReadLine();
