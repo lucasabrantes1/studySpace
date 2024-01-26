@@ -21,22 +21,22 @@ namespace PrimeiroProjeto {
             y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 
-            double p = (x.A + x.B + x.C) / 2.0;
-            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+            double areaX = x.Area();
 
 
-            p = (y.A + y.B + y.C) / 2.0;
-            double areay = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+            double areaY = y.Area();
 
 
            Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
-           Console.WriteLine("Área de Y = " + areay.ToString("F4", CultureInfo.InvariantCulture));
+           Console.WriteLine("Área de Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
 
-            if (areaX > areay) {
+            if (areaX > areaY) {
                 Console.WriteLine("Maior area é X");
             } else {
                 Console.WriteLine("Maior Area é Y");
             }
+
+            Console.ReadLine();
 
         }
     }
