@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EstoqueSegundoProblema"
   ],
-  "SelectedNode": "\\EstoqueSegundoProblema.sln",
+  "SelectedNode": "\\EstoqueSegundoProblema\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

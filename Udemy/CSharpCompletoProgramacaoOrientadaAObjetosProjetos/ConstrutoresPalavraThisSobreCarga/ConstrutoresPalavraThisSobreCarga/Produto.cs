@@ -8,12 +8,24 @@ namespace ConstrutoresPalavraThisSobreCarga {
         public double Preco;
         public int Quantidade;
 
-        /*Construtor*/
-        public Produto(string nome, double preco, int quantidade) {
+        public Produto() {
+        }
+
+        public Produto(string nome, double preco) {
             Nome = nome;
             Preco = preco;
-            Quantidade = quantidade;
         }
+
+
+
+
+
+        /*Construtor*/
+
+
+
+        /*essa sobrecarga é utilizada para permitir a instanciação sem os atributos*/
+
 
         public double ValorTOtalEmEstoque() {
             return Preco * Quantidade;
