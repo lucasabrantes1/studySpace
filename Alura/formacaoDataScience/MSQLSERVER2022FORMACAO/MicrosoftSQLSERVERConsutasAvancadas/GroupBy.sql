@@ -1,0 +1,22 @@
+SELECT * FROM TABELA_DE_CLIENTES;
+SELECT CIDADE, IDADE FROM TABELA_DE_CLIENTES ORDER BY CIDADE, IDADE;
+
+/*Agora vamos agrupar aplicando a soma da idade e ver o resultado agrupado por cidade*/
+SELECT CIDADE, SUM(IDADE) AS IDADE, SUM(LIMITE_DE_CREDITO) AS CREDITO FROM TABELA_DE_CLIENTES GROUP BY CIDADE;
+SELECT CIDADE, AVG(IDADE) AS IDADE, SUM(LIMITE_DE_CREDITO) AS CREDITO FROM TABELA_DE_CLIENTES GROUP BY CIDADE;
+
+/*Contador de linhas, podemos contar a quantidade de clientes que tem em uma cidade*/
+SELECT CIDADE, COUNT(*) AS NUMERO_DE_CLIENTES FROM TABELA_DE_CLIENTES GROUP BY CIDADE;
+
+SELECT EMBALAGEM, COUNT(*) AS NUMERO_DE_PRODUTOS FROM TABELA_DE_PRODUTOS 
+WHERE SABOR = 'Laranja' GROUP BY EMBALAGEM;
+
+
+
+/*Cada item da nota fiscal representa 1 venda de um determinado produto. Vimos no exercício anterior que temos várias vendas com quantidade igual a 99 litros para o produto '1101035'.
+Pergunto: Quantas vendas foram feitas com quantidade igual a 99 litros para o produto '1101035'?
+*/
+
+SELECT CODIGO_DO_PRODUTO, COUNT(QUANTIDADE) AS QUANTIDADE_DE_VENDAS FROM ITENS_NOTAS_FISCAIS WHERE CODIGO_DO_PRODUTO = '1101035' AND  QUANTIDADE = '99' GROUP BY CODIGO_DO_PRODUTO;
+
+SELECT COUNT(*) FROM ITENS_NOTAS_FISCAIS WHERE CODIGO_DO_PRODUTO = '1101035' AND QUANTIDADE = 99;
