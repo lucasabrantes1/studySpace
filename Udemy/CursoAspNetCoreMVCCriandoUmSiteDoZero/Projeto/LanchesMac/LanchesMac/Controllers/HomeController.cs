@@ -4,13 +4,15 @@ using System.Diagnostics;
 
 namespace LanchesMac.Controllers {
     public class HomeController : Controller {
-        
+
+        //iaction é um retorno generico uma interface
         public IActionResult Index() {
             return View();
         }
 
         public IActionResult Demo()
         {
+            //TempData["Nome"] = "Lucas";
             return View();
         }
 
