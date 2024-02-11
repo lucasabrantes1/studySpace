@@ -21,14 +21,22 @@ namespace LanchesMac;
 
             services.AddTransient<ILancheRepository, LancheRepository>();
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+            //Defini um serviço para poder acessar os serviços do httpcontext
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             //versão atualizada net6+
             //builder.Services.AddTransient<ILancheRepository, LancheRepository>();
             //builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
             services.AddControllersWithViews();
-        }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+            //Registrando os middlewares
+            services.AddMemoryCache();
+            services.AddSession();
+
+            
+    }
+
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -45,6 +53,8 @@ namespace LanchesMac;
 
             app.UseStaticFiles();
             app.UseRouting();
+            /********************* Habilitando o session *************************/
+            app.UseSession();
             app.UseAuthorization();
 
 
