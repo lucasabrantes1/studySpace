@@ -1,4 +1,5 @@
 ﻿using LanchesMac.Context;
+using LanchesMac.Models;
 using LanchesMac.Repositories;
 using LanchesMac.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,7 @@ namespace LanchesMac;
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
             //Defini um serviço para poder acessar os serviços do httpcontext
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
 
             //versão atualizada net6+
             //builder.Services.AddTransient<ILancheRepository, LancheRepository>();
