@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Views\\CarrinhoCompra\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\CarrinhoCompra\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Views\\_ViewImports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\_ViewImports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Models\\CarrinhoCompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\CarrinhoCompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Controllers\\CarrinhoCompraController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\CarrinhoCompraController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarrinhoCompra.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Models\\CarrinhoCompra.cs",
+              "RelativeDocumentMoniker": "Models\\CarrinhoCompra.cs",
+              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Models\\CarrinhoCompra.cs",
+              "RelativeToolTip": "Models\\CarrinhoCompra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T15:47:57.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T15:39:21.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Views\\CarrinhoCompra\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\CarrinhoCompra\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Views\\CarrinhoCompra\\Index.cshtml",
+              "RelativeToolTip": "Views\\CarrinhoCompra\\Index.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwCMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T15:39:14.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarrinhoCompraController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Controllers\\CarrinhoCompraController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CarrinhoCompraController.cs",
+              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Udemy\\CursoAspNetCoreMVCCriandoUmSiteDoZero\\Projeto\\LanchesMac\\LanchesMac\\Controllers\\CarrinhoCompraController.cs",
+              "RelativeToolTip": "Controllers\\CarrinhoCompraController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T15:34:40.099Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
