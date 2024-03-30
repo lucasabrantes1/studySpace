@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A0CD85AA-A9AB-4764-8D24-B768BF843F9B}|HelloWorld\\HelloWorld.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CD85AA-A9AB-4764-8D24-B768BF843F9B}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0CD85AA-A9AB-4764-8D24-B768BF843F9B}|HelloWorld\\HelloWorld.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CD85AA-A9AB-4764-8D24-B768BF843F9B}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0CD85AA-A9AB-4764-8D24-B768BF843F9B}|HelloWorld\\HelloWorld.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CD85AA-A9AB-4764-8D24-B768BF843F9B}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Class1.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Class1.cs",
               "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Class1.cs",
               "RelativeToolTip": "HelloWorld\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T16:35:00.657Z",
+              "WhenOpened": "2024-03-30T14:57:04.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Carro.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Carro.cs",
+              "RelativeDocumentMoniker": "HelloWorld\\Carro.cs",
+              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Carro.cs",
+              "RelativeToolTip": "HelloWorld\\Carro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T18:23:14.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Program.cs",
+              "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Program.cs",
+              "RelativeToolTip": "HelloWorld\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T18:12:26.681Z",
               "EditorCaption": ""
             }
           ]
