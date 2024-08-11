@@ -8,12 +8,8 @@ class Program
 {   
     static void Main()
     {
-
-        int? idade = null;
-
-        bool informouIdade = idade.Value;
-
-        bool informouIdade2 = idade.HasValue;
+        var matematica = new OperacoesMatematicas();
+        matematica.Adicionar(valor1: 1, valor2: 7);
     }
 
 }
