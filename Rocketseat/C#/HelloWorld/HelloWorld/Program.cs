@@ -7,37 +7,29 @@ class Program
 {
     static void Main()
     {
-        string texto1 = "A primeira frase.";
-        string texto2 = "A segunda frase";
+       DateOnly dia = new DateOnly(2023, 12, 1);
 
-        string paragrafo = texto1 + " " + " " + 7 + " " + true + " "  + texto2;
-        //Console.WriteLine(paragrafo);
-
-
-        string caminho = @"C:\teste\outrapasta\local";
-        //Console.WriteLine(caminho);
+       string diaEmTexto = dia.ToLongDateString();
+        //Console.WriteLine(diaEmTexto);
 
 
-        string paragrafo2 = $"A primeira frase. {7} {true} segunda frase...";
-        //Console.WriteLine(paragrafo2);
+       string diaEmTextoTraduzido = dia.ToString("", new CultureInfo("pt-BR"));
+       string diaEmTextoTraduzidoFormatado1 = dia.ToString("d MMMM yyyy", new CultureInfo("pt-BR"));
+       string diaEmTextoTraduzidoFormatado2 = dia.ToString("d 'de' MMMM 'de' yyyy", new CultureInfo("pt-BR"));
+        //Console.WriteLine(diaEmTextoTraduzidoFormatado2);
 
-        //Melhor economia de memoria
-        StringBuilder stringBuilder = new StringBuilder();
+        DateTime dia1 = new DateTime(2023, 12, 1, 20, 07, 1);
+        DateTime agora = DateTime.Now;
+        DateTime hoje = DateTime.Today;
+        DateTime hojeUTC = DateTime.UtcNow;
+        DateTime novaData = hoje.AddDays(1);
 
-        stringBuilder.Append(paragrafo);
-        stringBuilder.Append(paragrafo2);
+        //Console.WriteLine(dia1);
+        //Console.WriteLine(agora);
+        //Console.WriteLine(hojeUTC);
+        Console.WriteLine(hoje);
+        Console.WriteLine(novaData);
 
-        string resultado = stringBuilder.ToString();
-        //Console.WriteLine(resultado);
-
-
-
-
-        string texto = "O usuario {0} gosta do numero {1}";
-
-        string resultado2 = string.Format(texto, "Lucass", 7);
-
-        Console.WriteLine(resultado2);
 
     }
 }
