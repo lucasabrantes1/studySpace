@@ -5,18 +5,16 @@ namespace HelloWorld;
 
 class Program
 {   
-    enum NivelDeDificuldade
-    {
-        Baixo = 0, 
-        Medio = 1,
-        Alto = 2
-    }
     static void Main()
     {
-        NivelDeDificuldade nivel = NivelDeDificuldade.Alto;
-        Console.WriteLine(nivel);
 
-        int nivelInteiro = (int)nivel;
-        Console.WriteLine(nivelInteiro);
+        string nome = "Lucas Abrantes";
+        int meuNumero = 7;
+
+        var nome2 = "Wellison Arley";
+
+        string meuSobrenome;
+        var variavel = "string";
+
     }
 }
