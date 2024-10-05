@@ -7,14 +7,10 @@ class Program
 {   
     static void Main()
     {
+       int? idade = null;
 
-        string nome = "Lucas Abrantes";
-        int meuNumero = 7;
-
-        var nome2 = "Wellison Arley";
-
-        string meuSobrenome;
-        var variavel = "string";
+       bool informouIdade= idade.HasValue;
+       int informouIdade2 = idade.Value;
 
     }
 }
