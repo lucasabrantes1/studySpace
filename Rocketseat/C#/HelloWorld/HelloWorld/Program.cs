@@ -7,55 +7,24 @@ class Program
 {   
     static void Main()
     {
-        List<string> strings = new List<string>();
-        strings.Add("Hello");
-        strings.Add("Mundo");
-        strings.Add("Lucas");
-        strings.Add("Abrantes");
-        //Transformando tudo em uma string so
-        string resultado = string.Join(" ",strings);
-        Console.WriteLine(resultado);
+        //dado uma chave associase um valor com essa chave
+        Dictionary<int, string> dicionario = new Dictionary<int, string>();
+
+
+        //Parametros: 1 key sempre int, seguido do texto
+        dicionario.Add(1, "Lucas");
+        dicionario.Add(2, "Edilaine");
+        dicionario.Add(3, "Wellison");
+
+        //trazendo os valores
+        string value = dicionario[1];
+        Console.WriteLine(value);
 
 
 
-
-        List<int> ints = new List<int>();
-        ints.Add(1);
-
-        List<decimal> decimals = new List<decimal>();
-        decimals.Add(2.6m);
-
-        List<bool> bools = new List<bool>();
-        bools.Add(true);
-
-
-
-        // outras coisas que podemos fazer com listas
-
-
-        //misturando tipos
-        List<object> objects = new List<object>();
-        objects.Add("Hello");
-        objects.Add(3);
-        objects.Add(true);
-        //Console.WriteLine(objects.Count);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //retorna boleando
+        bool existe = dicionario.ContainsKey(1);
+        Console.WriteLine(existe);
 
     }
 }
