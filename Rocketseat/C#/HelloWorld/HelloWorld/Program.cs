@@ -7,24 +7,54 @@ class Program
 {   
     static void Main()
     {
-        List<int> inteiro = new List<int>();
+        List<string> strings = new List<string>();
+        strings.Add("Hello");
+        strings.Add("Mundo");
+        strings.Add("Lucas");
+        strings.Add("Abrantes");
+        //Transformando tudo em uma string so
+        string resultado = string.Join(" ",strings);
+        Console.WriteLine(resultado);
 
-        inteiro.Add(1); //index 0 
-        inteiro.Add(2); //index 0
-        //inteiro.Remove(1);
 
-        int primeiroElemento = inteiro.First();
-        int ultimoElemento = inteiro.Last();
-        int elementoNaPosicao = inteiro.ElementAt(2);
-        inteiro.RemoveAt(0); //remove na posicao
-        inteiro.Clear(); //remove todos os elementos da lista
 
-        //Console.WriteLine(inteiro.Count);
-        //Console.WriteLine(inteiro[0]);
 
-        //Console.WriteLine(ultimoElemento);
-        //Console.WriteLine(primeiroElemento);
-        Console.WriteLine(elementoNaPosicao);
+        List<int> ints = new List<int>();
+        ints.Add(1);
+
+        List<decimal> decimals = new List<decimal>();
+        decimals.Add(2.6m);
+
+        List<bool> bools = new List<bool>();
+        bools.Add(true);
+
+
+
+        // outras coisas que podemos fazer com listas
+
+
+        //misturando tipos
+        List<object> objects = new List<object>();
+        objects.Add("Hello");
+        objects.Add(3);
+        objects.Add(true);
+        //Console.WriteLine(objects.Count);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
