@@ -1,4 +1,0 @@
-FLUSH PRIVILEGES;
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '858687';
-ALTER USER 'pma'@'localhost' IDENTIFIED WITH mysql_native_password BY '858687';
-FLUSH PRIVILEGES;
