@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|c:\\users\\lucas.abrantes\\www\\workspaces\\personal\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|c:\\users\\lucas.abrantes\\www\\workspaces\\personal\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\operacoesmatematicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\operacoesmatematicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -91,14 +91,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Carro.cs",
-              "DocumentMoniker": "C:\\Users\\lucas.abrantes\\www\\workspaces\\personal\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Carro.cs",
-              "RelativeDocumentMoniker": "HelloWorld\\Carro.cs",
-              "ToolTip": "C:\\Users\\lucas.abrantes\\www\\workspaces\\personal\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Carro.cs",
-              "RelativeToolTip": "HelloWorld\\Carro.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAowBUAAAARAAAA",
+              "Title": "OperacoesMatematicas.cs",
+              "DocumentMoniker": "C:\\Users\\lucas.abrantes\\www\\workspaces\\personal\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\OperacoesMatematicas.cs",
+              "RelativeDocumentMoniker": "HelloWorld\\OperacoesMatematicas.cs",
+              "ToolTip": "C:\\Users\\lucas.abrantes\\www\\workspaces\\personal\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\OperacoesMatematicas.cs",
+              "RelativeToolTip": "HelloWorld\\OperacoesMatematicas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T22:48:54.563Z"
+              "WhenOpened": "2024-10-09T16:14:04.1Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -108,7 +109,7 @@
               "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
               "ToolTip": "C:\\Users\\lucas.abrantes\\www\\workspaces\\personal\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Program.cs",
               "RelativeToolTip": "HelloWorld\\Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAkwAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T23:17:18.852Z",
               "EditorCaption": ""
