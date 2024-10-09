@@ -1,0 +1,47 @@
+2022-08-06T16:39:32.519994Z 0 [System] [MY-010116] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe (mysqld 8.0.23) starting as process 10708
+2022-08-06T16:39:32.523317Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2022-08-06T16:39:32.616840Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-08-06T16:39:37.714467Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-08-06T16:39:38.299126Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-08-06T16:39:38.536978Z 0 [Warning] [MY-010075] [Server] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 5ce12bac-15a6-11ed-a623-08606e54675d.
+2022-08-06T16:39:38.643219Z 0 [ERROR] [MY-011947] [InnoDB] Cannot open 'C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\data\ib_buffer_pool' for reading: No such file or directory
+2022-08-06T16:39:39.651985Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-08-06T16:39:39.653137Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-08-06T16:39:40.074872Z 0 [System] [MY-010931] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-08-06T16:40:06.155256Z 0 [System] [MY-010116] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe (mysqld 8.0.23) starting as process 9388
+2022-08-06T16:40:06.157516Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2022-08-06T16:40:06.202147Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-08-06T16:40:08.694418Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-08-06T16:40:09.299384Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-08-06T16:40:09.452347Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2022-08-06T16:40:09.462615Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2022-08-06T16:40:09.477943Z 0 [ERROR] [MY-011947] [InnoDB] Cannot open 'C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\data\ib_buffer_pool' for reading: No such file or directory
+2022-08-06T16:40:09.852180Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-08-06T16:40:09.853276Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-08-06T16:40:10.283785Z 0 [System] [MY-010931] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-08-06T18:04:58.991837Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.23).
+2022-08-06T18:04:59.021057Z 0 [System] [MY-013105] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: Normal shutdown.
+2022-08-06T18:05:00.232289Z 0 [System] [MY-010910] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.
+2022-08-06T20:24:40.166162Z 0 [System] [MY-010116] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe (mysqld 8.0.23) starting as process 4320
+2022-08-06T20:24:40.200464Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2022-08-06T20:24:40.267661Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-08-06T20:24:42.530512Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-08-06T20:24:43.134143Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-08-06T20:24:44.250866Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-08-06T20:24:44.251933Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-08-06T20:24:44.397156Z 0 [System] [MY-010931] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-08-06T23:38:50.815904Z 10 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.23).
+2022-08-06T23:38:50.843690Z 0 [System] [MY-013105] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: Normal shutdown.
+2022-08-06T23:38:51.548017Z 0 [System] [MY-010910] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.
+2022-08-06T23:38:51.972713Z 0 [System] [MY-010116] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe (mysqld 8.0.23) starting as process 13208
+2022-08-06T23:38:52.004829Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2022-08-06T23:38:52.038405Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-08-06T23:38:53.999357Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-08-06T23:38:55.600214Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-08-06T23:38:56.247389Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-08-06T23:38:56.248740Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-08-06T23:38:56.444450Z 0 [System] [MY-010931] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-08-06T23:38:56.578314Z 9 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.23).
+2022-08-06T23:38:56.578310Z 8 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.23).
+2022-08-06T23:38:56.580551Z 0 [System] [MY-013105] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: Normal shutdown.
+2022-08-06T23:38:59.900534Z 0 [System] [MY-010910] [Server] C:\Users\Lucas\www\studySpace\Alura\formacaoDataScience\ModelagemDeBancoDeDadosRelacionaEntendendSQL\Mysql\UniServerZ\core\mysql\bin\mysqld_z.exe: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.

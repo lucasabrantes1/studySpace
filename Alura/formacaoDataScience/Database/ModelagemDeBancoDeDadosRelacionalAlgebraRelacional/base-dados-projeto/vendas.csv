@@ -1,0 +1,21 @@
+id_pedido,id_vendedor_vendas,id_livro,nome_livro,qtd_vendida
+1,4,5,Sombras e Ossos,2
+2,2,9,A Chama de Ember,8
+3,1,6,Pegasus e o Fogo do Olimpo,3
+4,3,3,Resident Evil Caliban Cove,3
+5,2,5,Sombras e Ossos,8
+6,4,3,Resident Evil Caliban Cove,9
+7,1,8,Cidade das Almas Perdidas,7
+8,1,9,A Chama de Ember,7
+9,3,3,Resident Evil Caliban Cove,9
+10,1,8,Cidade das Almas Perdidas,7
+11,2,3,Resident Evil Caliban Cove,9
+12,2,4,O Simbolo Perdido,6
+13,3,4,O Simbolo Perdido,3
+14,1,1,Percy Jackson e o Ladrao de Raios,4
+15,1,6,Pegasus e o Fogo do Olimpo,6
+16,1,1,Percy Jackson e o Ladrao de Raios,5
+17,2,6,Pegasus e o Fogo do Olimpo,8
+18,1,9,A Chama de Ember,10
+19,4,4,O Simbolo Perdido,4
+20,2,1,Percy Jackson e o Ladrao de Raios,10

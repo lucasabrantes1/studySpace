@@ -1,0 +1,59 @@
+﻿################################################################################
+# File name: CHANGE LOG CONTROLLER.txt
+# Created By: The Uniform Server Development Team
+################################################################################
+
+ --------------------------------------------
+ Uniform Server ZeroXIV Controller Change Log
+ --------------------------------------------
+ 2.3.2  - Removed support for PHP 5.6
+          Added support for PHP 8.0.*
+          Added support for subdomains on localhost
+          Updated method of changing the MySQL and MariaDB Password
+	  Updated method of resetting the root user user for MySQL and MariaDB
+
+ 2.3.1  - Removed the need for the MySQLhide.exe
+          Added support for PHP 7.4.*
+          Updated the Server Internet Status URL for External IP
+ 
+ 2.3.0  - Updated the About Screen for Uniform Server XIV
+          Updates for the compilation using Lazurus 2.0.4
+          Added support for PHP 7.2.* AND PHP 7.3.*
+          Removed support for PHP 52 to PHP 55
+	  Added support for MySQL8
+          Removed DtDNS as the service has shut down
+          Removed APC, eAccelerator and XCache PHP Acclerators as they are no longer supported           
+
+ 2.2.0  - Added support for PHP 7.1.*
+          Removed support for Plua and Lua cgi.
+ 
+ 2.1.1  - Corrected Bug: Main form not displayed after displaying
+          ZoneAlarm warning message.
+        - Added configuration parameter ZoneAlarmCheck to general section of
+          configuration file us_config.ini values false/true false=disable check. 
+
+ 2.1.0  - Corrected Bug: When ports already inuse the controller was hidden
+                         preventing user changing these ports from controller.
+
+ 2.0.0  - Initial release.
+
+
+ ----
+ Note
+ ----
+ 
+ Uniform Server ZeroXIV Controller is based on the Uniform Server ZeroXIII.
+ Uniform Server ZeroXIII Controller is based on the Uniform Server ZeroXII. 
+ Uniform Server ZeroXII Controller is based on the Uniform Server ZeroXI.
+
+ -----------------------------------------------------------------------------
+
+  The authors were trying to make the best product so they cannot be held
+  responsible for any type of damage or problems caused by using this or
+  another software.
+
+ --------------------------------------o0o------------------------------------
+            Copyright 2002-2016 The Uniform Server Development Team
+                            All rights reserved.
+
+
