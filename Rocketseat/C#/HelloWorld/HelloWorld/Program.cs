@@ -1,10 +1,10 @@
 ﻿namespace HelloWorld;
-
 class Program
-{   
+{
     static void Main()
     {
-        var matematica = new OperacoesMatematicas();
-        matematica.Teste(valor1:2);
+        var matematica = OperacoesMatematicas.Adicionar(1, 2);
+        Console.WriteLine(matematica);
+
     }
 }
