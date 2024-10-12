@@ -1,13 +1,14 @@
-﻿using System.Globalization;
-using System.Text;
-
-namespace HelloWorld;
+﻿namespace HelloWorld;
 
 class Program
 {   
     static void Main()
     {
         var matematica = new OperacoesMatematicas();
-        matematica.Adicionar(valor1: 1, valor2: 7);
+
+        (int resultado, string nome) = matematica.Adicionar(3, 7);
+
+        Console.WriteLine(resultado);
+        Console.WriteLine(nome);
     }
 }
