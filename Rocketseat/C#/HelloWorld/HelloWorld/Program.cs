@@ -5,10 +5,6 @@ class Program
     static void Main()
     {
         var matematica = new OperacoesMatematicas();
-
-        (int resultado, string nome) = matematica.Adicionar(3, 7);
-
-        Console.WriteLine(resultado);
-        Console.WriteLine(nome);
+        matematica.Teste(valor1:2);
     }
 }

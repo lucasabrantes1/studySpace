@@ -8,4 +8,10 @@ public class OperacoesMatematicas
 
         return (resultado, "Lucas");
     }
+
+
+    public void Teste(int valor1, int valor2 = 7)
+    {
+        Console.WriteLine(valor1 + valor2);
+    }
 }
