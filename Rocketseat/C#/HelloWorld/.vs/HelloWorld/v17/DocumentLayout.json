@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\operacoesmatematicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\operacoesmatematicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,26 +86,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OperacoesMatematicas.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\OperacoesMatematicas.cs",
-              "RelativeDocumentMoniker": "HelloWorld\\OperacoesMatematicas.cs",
-              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\OperacoesMatematicas.cs",
-              "RelativeToolTip": "HelloWorld\\OperacoesMatematicas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T16:09:47.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Program.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
               "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Program.cs",
               "RelativeToolTip": "HelloWorld\\Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAiwAcAAAAAAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAqwGIAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T23:17:18.852Z",
               "EditorCaption": ""

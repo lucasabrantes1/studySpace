@@ -11,7 +11,24 @@ public class Carro
     {
         Modelo = modelo;    
     }
-    public void NomeDoModelo() => Console.WriteLine(Modelo);
+    public void NomeDoModelo()
+    {
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+        Console.WriteLine(Modelo);
+    }
 }
 
 
