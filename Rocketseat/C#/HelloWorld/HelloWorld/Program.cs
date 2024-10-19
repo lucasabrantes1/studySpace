@@ -1,15 +1,16 @@
 ﻿using HelloWorld;
+using Microsoft.VisualBasic;
 
 class Program
 {
     static void Main()
-    {   
-        int numero = -1;
-        double saldo = 100.50;
-        bool ativo = false;
-        string autor = "Lucas";
-        List<int> lista = new List<int> { 1, 7 };
-        Cor cor = Cor.Amarelo;
+    {
+        //int numero = 0;
+        //double saldo = 100.50;
+        //bool ativo = false;
+        //string autor = "Lucas";
+        //List<int> lista = new List<int> { 1, 7 };
+        //Cor cor = Cor.Amarelo;
 
         /*
             > Maior
@@ -101,11 +102,57 @@ class Program
         //    Console.WriteLine("Login efetuado com sucesso!");
         //}
 
+        //==PARTE 2
 
-        //Enums
-        if (cor == Cor.Amarelo)
+        int numero = 0;
+        double saldo = 100.50;
+        bool ativo = false;
+        string autor = "Lucas";
+        List<int> lista = new List<int> { 1, 7 };
+        Cor cor = Cor.Amarelo;
+
+
+        //if (cor == Cor.Amarelo && numero < 0)
+        //{
+        //    Console.WriteLine("Login efetuado com sucesso!");
+        //}
+
+
+        //if (cor == Cor.Amarelo && numero >= 0 && ativo)
+        //{
+        //    Console.WriteLine("Login efetuado com sucesso!");
+        //}
+
+
+        //if (cor == Cor.Vermelho || numero > 0)
+        //{
+        //    Console.WriteLine("Login efetuado com sucesso!");
+        //}
+
+
+        //Informações importante: se vc tiver usando o and todas as outras condicoes devem ser verdadeira para
+        //entrar dentro do and e o or precisa apenas de uma condiçao verdadeira para entrar dentro do if
+
+        //string mensagemDeErro = null;
+
+        //if (mensagemDeErro is not null && mensagemDeErro.ToUpper().Equals("LUCAS"))
+        //{
+        //    Console.WriteLine("Entrous");
+        //}
+
+        //Console.WriteLine("View :)");
+
+
+        //No or e quase a mesma coisa ele precisa de apenas 1 valor sendo true se o primeiro for true ele ja via entrar
+        
+                         //|-- td isso de ser true--|
+        if (numero == 0 && (saldo > 100.0 || ativo ))
         {
-            Console.WriteLine("Login efetuado com sucesso!");
+            Console.WriteLine("Entrou dois");
         }
+
+
+        //por questoes de manutencao de codigo é essencial tomar cuidado com quantidades exageradas de condiciooes dentro dos paramtros
+
     }
 }
