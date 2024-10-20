@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\c#\\helloworld\\helloworld\\helloworld.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{82FDF347-20B5-4A39-A307-A7C7B7AAFEC7}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\helloworld.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -92,9 +96,22 @@
               "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
               "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Program.cs",
               "RelativeToolTip": "HelloWorld\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAqwBsAAAAXAAAA",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAqwH0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T23:17:18.852Z",
+              "WhenOpened": "2024-10-19T18:21:41.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HelloWorld",
+              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+              "RelativeDocumentMoniker": "HelloWorld\\HelloWorld.csproj",
+              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+              "RelativeToolTip": "HelloWorld\\HelloWorld.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-19T18:19:57.1Z",
               "EditorCaption": ""
             }
           ]
