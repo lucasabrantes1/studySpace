@@ -5,30 +5,26 @@ class Program
 {
     static void Main()
     {
-        /*                                        Continue
-         * 
-         * 
-         */
+        /*                                        Return
+        * O return também tem como finalidade nos loopings de parar assim como o break a diferença e que um break so pode
+        * se usado dentro de um looping ou switch mas no switch e uma exceção o return podemos usar dentro de funções também
+        */
 
-        var numero = 0;
-        while(numero < 10) 
+        var texto = Teste(5);
+        Console.WriteLine(texto);
+    }
+
+    static string Teste( int numero)
+    {   
+
+        Console.WriteLine("Teste 1");
+        if (numero == 5)
         {
-
-            /*                                        Continue
-             * Mantendo a condicao de 5, se quisermos pular apenas o numero 5 vamos trocar o break por continue
-             * com o continue e interssante movero numero++ para cima pra n ficar injnfinto
-             */
-            numero++;
-            if (numero == 5) 
-            {
-                continue;
-            }
-
-            Console.WriteLine(numero);
-            
-
+            Console.WriteLine("Teste 2");
+            return "Lucas";
 
         }
-
+        Console.WriteLine("Teste 3");
+        return "Wellisons";
     }
 }
