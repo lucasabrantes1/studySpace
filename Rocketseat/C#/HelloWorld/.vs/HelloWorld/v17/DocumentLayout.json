@@ -96,7 +96,7 @@
               "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
               "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\Program.cs",
               "RelativeToolTip": "HelloWorld\\Program.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAqwH0AAAABAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T18:21:41.021Z",
               "EditorCaption": ""
@@ -104,15 +104,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HelloWorld",
+              "Title": "HelloWorld.csproj",
               "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
               "RelativeDocumentMoniker": "HelloWorld\\HelloWorld.csproj",
               "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\C#\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
               "RelativeToolTip": "HelloWorld\\HelloWorld.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-19T18:19:57.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T18:19:57.1Z"
             }
           ]
         }

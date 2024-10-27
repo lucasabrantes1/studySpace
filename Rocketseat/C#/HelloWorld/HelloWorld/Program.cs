@@ -5,122 +5,35 @@ class Program
 {
     static void Main()
     {
-        /* O switch é uma alternativa ao uso de vários if e else if para verificar diferentes condições. 
-         * Com o switch, podemos executar diferentes blocos de código com base no valor de uma variável. 
-         * Também vimos que o switch pode ser usado com strings, enums e tipos números. 
-         * Além disso, aprendemos sobre a utilização do default para executar um bloco de código quando nenhuma das condições anteriores 
-         * é atendida. O switch é uma ferramenta útil para simplificar o código e torná-lo mais legível.*/
+        /*
+                                    For
 
-
-
-
-
-        /* Colocando o swithc esta dizendo - verifique crie uma condicao para minha variavel cor
-         caso essa varivel cor seja azul, entao executa o que esta dentro e depois de executar usar o break
-         para para a execução caso a cor seja azul, e assim podemos fazendo apra os outros casos.
+        No C# temos a possibilidadde de usar os loopings que [e basicamente a chamada do mesmo codigo em sequencia
+        do mesmo código. Então dada uma determinada condição eu quero executar esse mesmo codigo várias vezes
+        e pra gente entender o for vamo usar um exemplo bem fácil e ilustrando esse processo. por exemplo precisamos
+        caminhar 10 metros eu precisa de três informações de onde vou começar, quantos metros eu preciso andar, e a terceira
+        saber quantos metros apenas um passo meu vai cobrir 10 mestros, eu começo na posição 0 e vamos supro que cada passo seja 
+        igual a 5 e vamos caminhar até dar 10.
         */
 
 
-        //Exemplo com enum
-        Cor cor = Cor.Azul;
-        switch (cor) 
+        /*No meu exemplo a baixo 0 e ondeu estou, não comecei a caminhar, i é onde vamos chegarm ou seeja enquanto esse i for 
+         menor que 10 eu preciso ta fazendo esse looping dando mais e mais passo o i++ significa i+1 que ta me dizendo que 
+        a variavel i vai receber por ter um novo valor que e o valor anterior ao atual. ou seja via representar quantos metros por passo
+        vamos dar o i pode começar com um valor inicial também como pór exemplo 1,  e o i++ é a mesma coisa que i = i + 1* e possivel fazer de 2 e 2 também por exemplo i = i + 2 */
+        for (int i = 0; i < 10; i++)
         {
-            case Cor.Azul:
-                {
-                    Console.WriteLine("Azul");
-                }
-                break;
-            case Cor.Amarelo:
-                {
-                    Console.WriteLine("Amarelo");
-                }
-                break;
-            case Cor.Vermelho:
-                {
-                    Console.WriteLine("Vermelho");
-                }
-                break;
-            // e a cor view uma cor que nao esta na condicional, neste casso n acontece nada mas se
-            // quisermos que aconteça algo utilizamos o default ele vai imprimir um valor default nesse caso
-            // o default nao e obrigatorio ser passado.
-            default:
-                {
-                    Console.WriteLine("Outra cor");
-                }
-                break;
+            Console.WriteLine("Lucas andou " + i + " Metros");
         }
 
 
 
-
-
-        //Exemplo com texto
-        string texto = "Leca";
-
-        switch (texto)
+        var lista = new List<string> { "Eder", "Leca", "Edilaine" };
+        /*Podemos descobir o tamanho de uma lista com o for veja o exemplo a baixo, ele vai executar de 0 ate o tamanho da lista */
+        for (int i = 0; i < lista.Count; i++)
         {
-            case "Lucas":
-                {
-                    Console.WriteLine("Lucas");
-                }
-                break;
-            case "Leca":
-                {
-                    Console.WriteLine("Leca");
-                }
-                break;
-            case "Cileide":
-                {
-                    Console.WriteLine("Cileide");
-                }
-                break;
+            Console.WriteLine(lista[i]);
         }
-
-
-
-
-        //Exemplo com numero, com os numero e possivel colocar comparadores, o case ja verificao = entao nao funcionaria
-        int numero = 7;
-
-        switch (numero)
-        {
-            case >= 7:
-                {
-                    Console.WriteLine("Lucas");
-                }
-                break;
-            case 1:
-                {
-                    Console.WriteLine("Leca");
-                }
-                break;
-            case 0:
-                {
-                    Console.WriteLine("Cileide");
-                }
-                break;
-        }
-
-
-
-        //sWITCH TERNARIO 
-        
-
-        //minha variavel de comparacao
-        int numeroTernario = 8;
-
-        // stirng onde vai ser armazenada        
-        string resultado = numeroTernario switch
-        {   
-            // seguimos o numero seguida do que vai me retornar caso a condicao seja atendida, conseguimso colcoar comparadores tamb[em como >= e etc
-            >= 7 => "Lucas", 
-            1 => "Willian",
-            3 => "Leca",
-            //_ (underscore) representa o default
-            _ => "Nome desconhecido"
-        };
-
-        Console.WriteLine(resultado);
 
     }
 }
