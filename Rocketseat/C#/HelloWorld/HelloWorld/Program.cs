@@ -6,20 +6,24 @@ class Program
     static void Main()
     {
         /*
-                                    While
-        O while e uma especie de looping parecido com if  o while podemos traduzir como enquanto, enquanto a variavel
-        numero for igual 1 ele vai executar o que esta  no console.wrtileline. Ele pode entrar em looping infinito, para evitar
-        isso podemos uma condição dentro do parametro do while e um incremento dentro dele como o numero++;
+                                    Do While
+        A diferença entre esse e o do while é que o codigo vai ser executado ao menos uma vez, quando a variavel numero de fora tiver 
+        o mesmo dnumero do while, por exemplo 10 e 10 a maios diferença com o while é que antes de entrar no while ele checka antes
+        no do while ele entra primeiro
         
         */
 
-        var numero = 0;
-        while(numero < 10)
+        var numero = 10;
+
+        do
         {
             Console.WriteLine("Teste, " + numero);
             numero++;
         }
-        Console.WriteLine("Saiu");
+        while (numero < 10);
+
+        // ele vai imprimir 11 pois ele entra pelomenos uma vez no looping
+        Console.WriteLine(numero);
 
     }
 }
