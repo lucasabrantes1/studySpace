@@ -5,25 +5,30 @@ class Program
 {
     static void Main()
     {
-        /*
-                                    Do While
-        A diferença entre esse e o do while é que o codigo vai ser executado ao menos uma vez, quando a variavel numero de fora tiver 
-        o mesmo dnumero do while, por exemplo 10 e 10 a maios diferença com o while é que antes de entrar no while ele checka antes
-        no do while ele entra primeiro
-        
-        */
+        /*                                        Continue
+         * 
+         * 
+         */
 
-        var numero = 10;
-
-        do
+        var numero = 0;
+        while(numero < 10) 
         {
-            Console.WriteLine("Teste, " + numero);
-            numero++;
-        }
-        while (numero < 10);
 
-        // ele vai imprimir 11 pois ele entra pelomenos uma vez no looping
-        Console.WriteLine(numero);
+            /*                                        Continue
+             * Mantendo a condicao de 5, se quisermos pular apenas o numero 5 vamos trocar o break por continue
+             * com o continue e interssante movero numero++ para cima pra n ficar injnfinto
+             */
+            numero++;
+            if (numero == 5) 
+            {
+                continue;
+            }
+
+            Console.WriteLine(numero);
+            
+
+
+        }
 
     }
 }
