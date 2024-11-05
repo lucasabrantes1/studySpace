@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Communication\NewFolder1\**" />
+    <Content Remove="Communication\NewFolder1\**" />
+    <EmbeddedResource Remove="Communication\NewFolder1\**" />
+    <None Remove="Communication\NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
