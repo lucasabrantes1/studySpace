@@ -2,20 +2,40 @@
   {
     "ContainingType": "MyFirstApi.Controllers.UserController",
     "Method": "Get",
-    "RelativePath": "api/user",
+    "RelativePath": "api/user/{id}/{nickname}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nickname",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "MyFirstApi.Response",
+        "Type": "MyFirstApi.User",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
       }
     ]
   }
