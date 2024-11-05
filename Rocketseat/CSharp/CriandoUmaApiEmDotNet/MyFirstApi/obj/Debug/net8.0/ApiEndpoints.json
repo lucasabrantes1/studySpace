@@ -2,7 +2,7 @@
   {
     "ContainingType": "MyFirstApi.Controllers.UserController",
     "Method": "Get",
-    "RelativePath": "api/user/{id}/{nickname}",
+    "RelativePath": "api/user",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,12 +10,12 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "nickname",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
