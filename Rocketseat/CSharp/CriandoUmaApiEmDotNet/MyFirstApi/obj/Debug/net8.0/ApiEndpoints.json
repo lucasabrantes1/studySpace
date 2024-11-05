@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "MyFirstApi.Controllers.WeatherForecastController",
+    "ContainingType": "MyFirstApi.Controllers.UserController",
     "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "RelativePath": "api/user",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[MyFirstApi.WeatherForecast, MyFirstApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "MyFirstApi.Response",
         "MediaTypes": [
           "text/plain",
           "application/json",
