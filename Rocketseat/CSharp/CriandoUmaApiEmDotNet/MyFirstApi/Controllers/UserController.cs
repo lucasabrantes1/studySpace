@@ -35,4 +35,13 @@ public class UserController : ControllerBase
         };
         return Created(string.Empty, response);
     }
+
+
+    [HttpPut]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [Route("{id}")]
+    public IActionResult Update([FromRoute] int id,  [FromBody] RequestUpdateUserProfileJson request)
+    {  
+        return NoContent();
+    }
 }

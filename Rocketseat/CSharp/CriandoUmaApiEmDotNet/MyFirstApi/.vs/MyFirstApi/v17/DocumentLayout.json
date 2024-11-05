@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4CA29714-5070-4642-A618-5CE859024C39}|MyFirstApi.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\csharp\\criandoumaapiemdotnet\\myfirstapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CA29714-5070-4642-A618-5CE859024C39}|MyFirstApi.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA29714-5070-4642-A618-5CE859024C39}|MyFirstApi.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\csharp\\criandoumaapiemdotnet\\myfirstapi\\communication\\requests\\requestregisteruserjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA29714-5070-4642-A618-5CE859024C39}|MyFirstApi.csproj|solutionrelative:communication\\requests\\requestregisteruserjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA29714-5070-4642-A618-5CE859024C39}|MyFirstApi.csproj|c:\\users\\pc\\www\\studyspace\\rocketseat\\csharp\\criandoumaapiemdotnet\\myfirstapi\\communication\\responses\\responseregistereduserjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA29714-5070-4642-A618-5CE859024C39}|MyFirstApi.csproj|solutionrelative:communication\\responses\\responseregistereduserjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,39 +86,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResponseRegisteredUserJson.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\CSharp\\CriandoUmaApiEmDotNet\\MyFirstApi\\Communication\\Responses\\ResponseRegisteredUserJson.cs",
-              "RelativeDocumentMoniker": "Communication\\Responses\\ResponseRegisteredUserJson.cs",
-              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\CSharp\\CriandoUmaApiEmDotNet\\MyFirstApi\\Communication\\Responses\\ResponseRegisteredUserJson.cs",
-              "RelativeToolTip": "Communication\\Responses\\ResponseRegisteredUserJson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T22:51:55.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RequestRegisterUserJson.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\CSharp\\CriandoUmaApiEmDotNet\\MyFirstApi\\Communication\\Requests\\RequestRegisterUserJson.cs",
-              "RelativeDocumentMoniker": "Communication\\Requests\\RequestRegisterUserJson.cs",
-              "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\CSharp\\CriandoUmaApiEmDotNet\\MyFirstApi\\Communication\\Requests\\RequestRegisterUserJson.cs",
-              "RelativeToolTip": "Communication\\Requests\\RequestRegisterUserJson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T22:10:38.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\CSharp\\CriandoUmaApiEmDotNet\\MyFirstApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\PC\\www\\studySpace\\Rocketseat\\CSharp\\CriandoUmaApiEmDotNet\\MyFirstApi\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAkwBwAAABOAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwCgAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T22:23:51.414Z",
               "EditorCaption": ""
