@@ -9,15 +9,16 @@ namespace MyFirstApi.Controllers;
 public class UserController : ControllerBase
 {
     [HttpGet]
-    [ProducesResponseType(typeof(User),StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(string),StatusCodes.Status400BadRequest)]
-    public IActionResult Get([FromHeader]int id,[FromHeader] string? nickname)
+    [Route("{id}")]
+    [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+    public IActionResult GetById([FromRoute] int id)
     {
         var response = new User
-        {   
-            Id = 1, 
+        {
+            Id = 1,
             Age = 7,
-            Name = "Lucas"
+            Name = "welisson"
         };
 
         return Ok(response);
@@ -50,6 +51,28 @@ public class UserController : ControllerBase
     [Route("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult Delete([FromRoute] int id)
+    {
+        return NoContent();
+    }
+
+
+    [HttpGet]
+    [ProducesResponseType(typeof(List<User>), StatusCodes.Status200OK)]
+    public IActionResult GetAll()
+    {
+        var response = new List<User>()
+        {
+            new User {Id = 1, Age = 7, Name = "Lucas"},
+            new User {Id = 2, Age = 7, Name = "Teste"}
+        };
+
+        return Ok(response);
+    }
+
+
+    [HttpPut("change-password")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public IActionResult ChangePassword([FromBody] RequestChangePasswordJson request)
     {
         return NoContent();
     }
