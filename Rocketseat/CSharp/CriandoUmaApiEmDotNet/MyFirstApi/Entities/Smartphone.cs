@@ -1,5 +1,9 @@
 ﻿namespace MyFirstApi.Entities;
 
-public class Smartphone
+public class Smartphone : Device
 {
+    public override string GetBrand()
+    {
+        return "Samsumg";
+    }
 }

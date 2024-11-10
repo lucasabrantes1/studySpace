@@ -10,6 +10,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MyFirstApi.Controllers.MyFirstApiBaseController",
+    "Method": "Heathy",
+    "RelativePath": "api/device/heathy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MyFirstApi.Controllers.UserController",
     "Method": "Create",
     "RelativePath": "api/user",
@@ -160,5 +170,15 @@
         "StatusCode": 204
       }
     ]
+  },
+  {
+    "ContainingType": "MyFirstApi.Controllers.MyFirstApiBaseController",
+    "Method": "Heathy",
+    "RelativePath": "api/user/heathy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

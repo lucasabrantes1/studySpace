@@ -5,13 +5,10 @@ namespace MyFirstApi.Controllers;
 public class DeviceController : MyFirstApiBaseController
 {
     [HttpGet]
-    public IActionResult Get()
+    public IActionResult Get()        
+    {   
+        var key = GetCustomKey();
 
-        
-    {
-        var laptop = new Laptop();
-        
-        var model = laptop.GetModel();
-        return Ok(model);
+        return Ok(key);
     }
 }
